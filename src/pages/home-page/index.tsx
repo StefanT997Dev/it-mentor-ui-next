@@ -3,12 +3,11 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
-import RoundGraphicWorkImage from '@/../public/round-graphic-work.svg';
-import HomePageCover from '@/../public/home-page/home-page-cover.png';
-import HomePageCoverMobile from '@/../public/home-page/home-page-cover-mobile.png';
-import Logo from '@/components/Logo/Logo'
+import RoundGraphicWorkImage from '../../../public/round-graphic-work.svg';
+import HomePageCover from '../../../public/home-page/home-page-cover.png';
+import HomePageCoverMobile from '../../../public/home-page/home-page-cover-mobile.png';
+import Logo from '../../components/Logo/Logo'
 import classes from './index.module.scss';
-import Menu from '@/components/Menu/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,9 +29,9 @@ export default function Home() {
             <Logo />
           </div>
         ) : null}
-        {/* <Link href="/mentors-contact" className={classes.home__header__become_mentor}>
+        <Link href="/mentors-contact" className={classes.home__header__become_mentor}>
           Postani mentor
-        </Link> */}
+        </Link>
         <div className={classes.home__header__logo}></div>
       </div>
       <div className={classes.home__img}>
@@ -77,15 +76,14 @@ export default function Home() {
               </Link>
           </div>
         </div>
-        {/* {isMobile ? (
+        {isMobile ? (
           <Link
             href="/mentors-contact"
             className={classes.home__content__become_mentor}
           >
             Postani mentor
           </Link>
-        ) : null} */}
-        <Menu/>
+        ) : null}
       </div>
     </div>
   )

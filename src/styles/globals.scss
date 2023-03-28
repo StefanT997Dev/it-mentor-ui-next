@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  font-family: 'GilroyLight';
+
+  @media(max-width:1579px){
+    font-size: 51.4%;
+  }
+
+  @media(max-width: 1380px){
+    font-size: 44.92%;
+  }
+
+  @media(max-width: 1250px) {
+    font-size: 40.69%;
+  }
+
+  @media(max-width: 943px){
+    font-size: 30.7%;
+  }
+
+  @media(max-width: 943px){
+    font-size: 30.7%;
+  }
+
+  @media(max-width: 742px) {
+    font-size: 108.35%;
+  }
+  @media(max-width:568px){
+    font-size: 82.94%;
+  }
+  @media(max-width: 428px) {
+    font-size: 62.5%;
+  }
+  @media(max-width: 413px){
+    font-size: 60.31%;
+  }
+  @media(max-width: 373px){
+    font-size: 54.48%;
+  }
+  @media(max-width: 342px){
+    font-size: 49.95%;
+  }
+}
+// na po 120 dodajem 
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url(../fonts/Gilroy.ttf) format('truetype');
+  src: local('GilroyLight'), url('../fonts/Gilroy-Thin.ttf') format('truetype');
+  src: local('GiloryBold'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  src: local('GilroyExtraBold'), url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 

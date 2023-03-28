@@ -1,0 +1,97 @@
+@import "@/scss/breakpoints";
+@import "@/scss/colors";
+
+.menu_button {
+  position: fixed;
+  top: 4rem;
+  right: 7rem;
+  width: 7rem;
+  height: 7rem;
+  background-color: #15172c;
+  cursor: pointer;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile() {
+    right: 2.4rem;
+    width: 5.7rem;
+    height: 5.7rem;
+  }
+
+  filter: drop-shadow(0rem 1.46571rem 3.25714rem rgba(21, 23, 44, 0.15));
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  z-index: 999;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+
+  &__item {
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 6.4rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.05em;
+    color: $color-fonts-menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile(){
+      font-size: 3.6rem;
+    }
+      &__background {
+        position: relative;
+        z-index: -1;
+        width: 33.2rem;
+        height: 10.2rem;
+        background-color: $color-clients-cta-red;
+        
+        @include mobile(){
+          width: 18.5rem;
+          height: 5.8rem;
+        }
+
+        &__text {
+            font-family: Gilroy;
+            font-weight: 800;
+            font-size: 6.4rem;
+            line-height: 9.6rem;
+            letter-spacing: 0.05em;
+            color: $color-fonts-menu;
+
+            @include mobile(){
+              line-height: 5.4rem;
+              font-size: 3.6rem;
+            }
+        }
+      }
+  }
+
+  animation-duration: 0.5s;
+  animation-name: showAnimation;
+
+  @keyframes showAnimation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
