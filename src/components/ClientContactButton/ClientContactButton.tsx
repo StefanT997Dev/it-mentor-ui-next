@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import './ClientContactButton.module.scss';
+import classes from './ClientContactButton.module.scss';
 
 const ClientContactButton = () => (
-    <Link href="/client-contact" className="client-contact-button">
+    <Link href="/kontakt" className={classes.client_contact_button}>
         Zakaži Konsultaciju
     </Link>
 );

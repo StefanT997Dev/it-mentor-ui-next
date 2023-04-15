@@ -36,23 +36,14 @@ const Menu = () => {
       </div>
       {isOpen && (
         <div className={classes.menu}>
-          <Link href="/programiranje-za-pocetnike" className={classes.menu__item}>
-            O nama
+          <Link href="/" className={classes.menu__item}>
+            Početna
           </Link>
           <div className={classes.menu__item__background}>
             <Link href="/it-kursevi" className={classes.menu__item__background__text}>
               Mentori
             </Link>
           </div>
-          <Link href="/registruj-se" className={classes.menu__item}>
-            Registracija
-          </Link>
-          {/* <Link to="/clients" className="menu__item">
-            Moj profil.
-          </Link>
-          <Link to="/mentors" className="menu__item">
-            Blog.
-          </Link> */}
         </div>
       )}
     </>

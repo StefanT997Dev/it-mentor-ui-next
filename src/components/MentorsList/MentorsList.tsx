@@ -1,15 +1,20 @@
+import { Mentor } from "@/models/mentor";
 import MentorListItem from "../MentorListItem/MentorListItem";
-import { exampleMentors } from "./mentors";
+import classes from './MentorsList.module.scss';
 
-const MentorsList = () => {
-    return(
-        <div className="mentor-list__container">
-            {exampleMentors.map((mentor) => (
-              <MentorListItem key={mentor.id} mentor={mentor} />
-             ))
-            }
-      </div>
-    )
+interface Props {
+  exampleMentors: Mentor[];
+}
+
+const MentorsList = ({ exampleMentors }: Props) => {
+  return (
+    <div className={classes.mentor_list}>
+      {exampleMentors.map((mentor) => (
+        <MentorListItem key={mentor.id} mentor={mentor} />
+      ))
+      }
+    </div>
+  )
 }
 
 export default MentorsList;

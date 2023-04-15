@@ -1,0 +1,156 @@
+@import "@/scss/colors";
+@import "@/scss/breakpoints";
+
+.mentor_profile {
+  position: absolute;
+  width: 100vw;
+  height: 127.8rem;
+  left: 0px;
+  top: 0rem;
+
+  background: linear-gradient(180deg, rgba(242, 241, 241, 0) 11.39%, #F2F1F1 76.14%);
+
+  &__logo{
+    position: fixed;
+    top: 4rem;
+    left: 7.3rem;
+  }
+
+  &__header {
+    margin: 16.5rem 27.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+    @include mobile() {
+      margin: 13.2rem 2.4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__image {
+      width: 39.8rem;
+      object-fit: contain;
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      
+      &__title {
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+        letter-spacing: 0.04em;
+        color: #15172C;
+        font-family: Gilroy;
+
+        @include mobile() {
+          margin-top: 2.4rem;
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+        }
+      }
+
+      &__category {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: 0.04em;
+        color: #58595F;
+        font-family: GilroyLight;
+
+        @include mobile() {
+          margin-top: 1.2rem;
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+      }
+
+      &__review {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+        
+        @include mobile() {
+          margin-top: 1.2rem;
+        }
+      }
+
+      &__bio {
+        margin-top: 5rem;
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+        letter-spacing: 0.04em;
+        color: #58595F;
+        font-family: GilroyLight;
+
+        @include mobile() {
+          margin-top: 2.4rem;
+          font-size: 1.8rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  &__package_container {
+    margin: 16.4rem 14rem 20rem 14rem;
+    text-align: center;
+
+    @include mobile() {
+      margin: 6.4rem 2.4rem 1.2rem 2.4rem;
+    }
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 4rem;
+      font-weight: 800;
+      color: #15172C;
+      font-family: Gilroy;
+      letter-spacing: 0.04em;
+
+      @include mobile() {
+        width: 100%;
+        font-size: 2.4rem;
+        line-height: 4rem;
+      }
+    }
+
+    &__sub_title {
+      max-width: 51rem;
+      margin: 2.3rem auto;
+      margin-bottom: 0;
+      font-size: 2.4rem;
+      line-height: 4rem;
+      font-weight: 800;
+      color: #15172C;
+      font-family: Gilroy;
+      letter-spacing: 0.04em;
+
+      @include mobile() {
+        max-width: 100%;
+        margin: 0 2.4rem;
+        font-size: 1.8rem;
+        line-height: 4rem;
+      }
+    }
+
+    &__cards {
+      margin-top: 3.8rem;
+      display: flex;
+      flex-direction: row;
+      gap: 4.8rem;
+
+      @include mobile() {
+        margin-top: 5.6rem;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+  }
+}

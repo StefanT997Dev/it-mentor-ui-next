@@ -8,46 +8,31 @@ html {
   font-size: 62.5%; // 10px
   font-family: 'GilroyLight';
 
-  @media(max-width:1579px){
-    font-size: 51.4%;
+  @media (min-width: 366px) {
+    font-size: 71.48%
   }
 
-  @media(max-width: 1380px){
-    font-size: 44.92%;
+  @media (min-width: 418px) {
+    font-size: 81.64%;
   }
 
-  @media(max-width: 1250px) {
-    font-size: 40.69%;
+  @media (min-width: 478px) {
+    font-size: 93.36%;
   }
 
-  @media(max-width: 943px){
-    font-size: 30.7%;
+  @media (min-width: 546px) {
+    font-size: 106.64%;
   }
 
-  @media(max-width: 943px){
-    font-size: 30.7%;
+  @media (min-width: 624px) {
+    font-size: 121.87%;
   }
 
-  @media(max-width: 742px) {
-    font-size: 108.35%;
-  }
-  @media(max-width:568px){
-    font-size: 82.94%;
-  }
-  @media(max-width: 428px) {
-    font-size: 62.5%;
-  }
-  @media(max-width: 413px){
-    font-size: 60.31%;
-  }
-  @media(max-width: 373px){
-    font-size: 54.48%;
-  }
-  @media(max-width: 342px){
-    font-size: 49.95%;
+  @media (min-width: 713px) {
+    font-size: 139.25%;
   }
 }
-// na po 120 dodajem 
+
 body {
   margin: 0;
   font-family: "Gilroy";

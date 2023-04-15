@@ -1,7 +1,7 @@
 @import "@/scss/colors";
 @import "@/scss/breakpoints";
 
-.landing-client {
+.landing_client {
   font-family: Gilroy;
 
   &__logo{
@@ -24,9 +24,7 @@
     position: relative;
     right: 0;
     bottom: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: contain;
     display: flex;
@@ -41,7 +39,6 @@
       left: 0;
       top: 0;
       width: 100%;
-      height: 100%;
       object-fit: cover;
     }
 
@@ -62,21 +59,21 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      align-items:flex-start;
+      align-items: flex-start;
       text-align: left;
-      width: 71vw;
+      width: 70%;
       color: $color-white;
-      margin-top: 22.5rem;
+      margin-top: 5rem;
 
       @include mobile() {
-        width: 100vw;
+        width: 90%;
         top: 16rem;
         margin-top: 0rem;
         align-items: center;
         text-align: center;
       }
       &__title {
-        font-size: 9.6rem;
+        font-size: 5rem;
         font-weight: 800;
         letter-spacing: 0.1rem;
         line-height: 11.7rem;
@@ -86,16 +83,17 @@
           font-size: 4.8rem;
           line-height: 5.88rem;
           text-align: left;
-          max-width: 38rem;
         }
       }
 
+      &__video{
+        margin-top: 5.3rem;
+      }
+
       &__description {
-        margin-top: 10.3rem;
-        //max-width: 103.1rem;
-        font-size: 4.8rem;
+        font-size: 3rem;
         font-weight: 800;
-        line-height: 5.9rem;
+        line-height: 5.6rem;
         letter-spacing: 0.1rem;
 
         @include mobile() {
@@ -103,7 +101,6 @@
           font-size: 2.4rem;
           text-align: left;
           line-height: 2.9rem;
-          max-width: 38rem;
         }
       }
     }
@@ -504,32 +501,6 @@
             line-height: 3rem;
           }
         }
-
-        &__image_container {
-          position: relative;
-          width: 41.4rem;
-          height: 80rem;
-          box-shadow: 0px 21.1579px 70.5263px -14.1053px rgba(0, 0, 0, 0.25);
-          border-radius: 34px;
-          margin-bottom: 29.2rem;
-
-          @include mobile() {
-            margin-bottom: 15rem;
-            height: 732px;
-            width: 100%;
-          }
-
-          &__image {
-            width: 41.4rem;
-            height: 80rem;
-            object-fit: contain;
-
-            @include mobile() {
-              height: 732px;
-              width: 100%;
-            }
-          }
-        }
       }
 
       &__image_container {
@@ -653,15 +624,13 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 124.4rem;
+        width: 70%;
         height: 108rem;
-        z-index: 1;
+        z-index: -1;
 
         @include mobile() {
-          min-width: 100vw;
           height: unset;
-          min-height: 43.5rem;
-          width: unset;
+          width: 100%;
           top: 0;
         }
 
@@ -669,11 +638,6 @@
           width: 124.4rem;
           height: 108rem;
           object-fit: contain;
-
-          @include mobile() {
-            min-width: 100vw;
-            width: unset;
-          }
           position: absolute;
           left: 0;
           z-index: -1;

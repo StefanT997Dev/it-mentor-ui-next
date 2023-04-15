@@ -1,0 +1,74 @@
+@import "@/scss/breakpoints";
+
+.mentors_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile() {
+        width: 90%;
+    }
+
+    &__logo {
+        position: fixed;
+        top: 4rem;
+        left: 7.3rem;
+    }
+
+    &__text_content {
+        width: 70%;
+
+        &__title {
+            font-size: 6rem;
+            line-height: 12rem;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 800;
+            color: #15172C;
+
+            @include mobile() {
+                font-size: 2rem;
+                line-height: 6rem;
+                width: 90%;
+            }
+        }
+
+        &__description {
+            font-size: 2.4rem;
+            font-family: GilroyLight;
+            font-style: normal;
+            font-weight: 300;
+            color: #58595F;
+            letter-spacing: 0.04em;
+            margin-top: 2rem;
+
+            @include mobile() {
+                max-width: 100%;
+                margin-top: 3.2rem;
+                margin-bottom: 6rem;
+                font-size: 1.8rem;
+                line-height: 2rem;
+            }
+
+            &__subtitle {
+                line-height: 5rem;
+                font-family: Gilroy;
+            }
+
+            &__content {
+                width: 60%;
+                line-height: 4rem;
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 7.4rem;
+        width: 70%;
+
+        @include mobile() {
+            margin-top: 6rem;
+            left: 0;
+        }
+    }
+}

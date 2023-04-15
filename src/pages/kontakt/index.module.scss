@@ -1,0 +1,43 @@
+@import "@/scss/breakpoints";
+
+.clients_contact__info {
+    color: black;
+}
+
+.client_contact {
+    background-color: #15172C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobile() {
+        padding: 122px 24px;
+        height: 100%;
+    }
+
+    &__logo{
+        position: fixed;
+        top: 4rem;
+        left: 7.3rem;
+    
+        @include mobile(){
+          position: absolute;
+          top:4rem;
+          left: 2.4rem;
+        }
+    }
+
+    &__content{
+        color: white;
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    &__back{
+        font-size: 6rem;
+        text-align: center;
+    }
+}

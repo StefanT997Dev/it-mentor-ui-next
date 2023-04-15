@@ -1,0 +1,12 @@
+@import "@/scss/colors";
+@import "@/scss/breakpoints";
+
+.mentor_list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mobile() {
+        display: flex;
+        flex-direction: column;
+    }
+}

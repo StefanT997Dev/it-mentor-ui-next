@@ -3,8 +3,8 @@ import Link from "next/link";
 const Logo = () => (
   <Link href="/">
     <svg
-      width="10rem"
-      height="3.7rem"
+      width="15rem"
+      height="7.4rem"
       viewBox="0 0 134 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
