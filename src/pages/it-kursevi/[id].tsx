@@ -38,16 +38,11 @@ const MentorProfile = () => {
     return (
         <>
             <div className={classes.mentor_profile}>
-                <div className={classes.mentor_profile__logo}>
-                    {!isMobile && <Logo />}
-                </div>
                 <div className={classes.mentor_profile__header}>
-                    <div className={classes.mentor_profile__header__image}>
                         <Image
                             src={image}
                             className={classes.mentor_profile__header__image}
                             alt="Something" />
-                    </div>
                     <div className={classes.mentor_profile__header__text}>
                         <div className={classes.mentor_profile__header__text__title}>
                             {firstName} {lastName}

@@ -2,45 +2,26 @@
 @import "@/scss/breakpoints";
 
 .mentor_profile {
-  position: absolute;
-  width: 100vw;
-  height: 127.8rem;
-  left: 0px;
-  top: 0rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
   background: linear-gradient(180deg, rgba(242, 241, 241, 0) 11.39%, #F2F1F1 76.14%);
 
-  &__logo{
-    position: fixed;
-    top: 4rem;
-    left: 7.3rem;
-  }
-
   &__header {
-    margin: 16.5rem 27.8rem;
     display: flex;
-    flex-direction: row;
-    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
 
-    @include mobile() {
-      margin: 13.2rem 2.4rem;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    &__image {
-      width: 39.8rem;
-      object-fit: contain;
-
-      @include mobile() {
-        width: 100%;
-      }
+    &__image{
+      margin-top: 13em;
+      width: 100%;
+      height: auto;
     }
 
     &__text {
-      display: flex;
-      flex-direction: column;
-      
       &__title {
         font-size: 4.8rem;
         line-height: 5.8rem;
@@ -99,32 +80,25 @@
   }
 
   &__package_container {
-    margin: 16.4rem 14rem 20rem 14rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-
-    @include mobile() {
-      margin: 6.4rem 2.4rem 1.2rem 2.4rem;
-    }
+    gap: 2rem;
 
     &__title {
-      font-size: 4.8rem;
+      font-size: 2.4rem;
       line-height: 4rem;
       font-weight: 800;
       color: #15172C;
       font-family: Gilroy;
       letter-spacing: 0.04em;
-
-      @include mobile() {
-        width: 100%;
-        font-size: 2.4rem;
-        line-height: 4rem;
-      }
     }
 
     &__sub_title {
       max-width: 51rem;
-      margin: 2.3rem auto;
-      margin-bottom: 0;
       font-size: 2.4rem;
       line-height: 4rem;
       font-weight: 800;
@@ -134,23 +108,15 @@
 
       @include mobile() {
         max-width: 100%;
-        margin: 0 2.4rem;
         font-size: 1.8rem;
         line-height: 4rem;
       }
     }
 
     &__cards {
-      margin-top: 3.8rem;
       display: flex;
-      flex-direction: row;
-      gap: 4.8rem;
-
-      @include mobile() {
-        margin-top: 5.6rem;
-        flex-direction: column;
-        gap: 2.4rem;
-      }
+      flex-direction: column;
+      gap: 2.4rem;
     }
   }
 }

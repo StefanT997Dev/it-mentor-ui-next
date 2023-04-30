@@ -43,8 +43,12 @@ a{
   text-decoration: none;
 }
 
-h1{
+h1, ul{
   margin: 0;
+}
+
+ul{
+  padding: 0;
 }
 
 @font-face {
