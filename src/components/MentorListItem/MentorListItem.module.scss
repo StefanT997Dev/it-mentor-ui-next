@@ -5,6 +5,9 @@
   flex-direction: column;
   text-align: left;
   width: 33.33%;
+  flex-shrink: 1;
+  max-width: 38rem;
+
   &:hover {
     cursor: pointer;
   }

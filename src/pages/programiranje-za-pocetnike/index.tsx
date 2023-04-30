@@ -3,7 +3,7 @@ import useMobile from "@/hooks/useMobile";
 import Head from "next/head";
 import Image from 'next/image';
 import Link from "next/link";
-import ClientLandingHeaderMobileImage from '@/../public/client-landing/client-landing-header-mobile.png';
+import ClientLandingHeaderMobileImage from '@/../public/client-landing/client-landing-header-mobile.jpg';
 import ClientLandingHeaderImage from '@/../public/client-landing/client-landing-header.png';
 import ClientLandingTestimonialImage from '@/../public/client-landing/client-landing-testimonial.png';
 import ClientLandingCryImage from '@/../public/client-landing/client-landing-cry.png';
