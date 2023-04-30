@@ -175,7 +175,7 @@ export const exampleMentors = [
       category: 'Web Developer',
       skills: ['Java', 
       'Objektno orjentisano programiranje', 
-      'baze podataka', 
+      'Baze podataka', 
       'SQL', 
       'Strukture podataka i algoritmi',
       'Android programiranje',
@@ -219,7 +219,7 @@ export const exampleMentors = [
       Sada je vreme na tebe. Zakaži konstultaciju.
       `,
       image: StefanTosic,
-      worksAt: 'Faye',
+      worksAt: 'ITACHI',
       category: 'Fullstack Software Engineer',
       skills: ['C#', 
       '.NET Core', 

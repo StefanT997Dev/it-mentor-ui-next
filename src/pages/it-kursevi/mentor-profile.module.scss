@@ -15,10 +15,14 @@
     align-items: center;
     width: 90%;
 
-    &__image{
+    &__image {
       margin-top: 13em;
       width: 100%;
       height: auto;
+    }
+
+    &__skills{
+      margin-top: 2em;
     }
 
     &__text {
@@ -48,17 +52,6 @@
           margin-top: 1.2rem;
           font-size: 1.8rem;
           line-height: 2rem;
-        }
-      }
-
-      &__review {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: row;
-        gap: 0.4rem;
-        
-        @include mobile() {
-          margin-top: 1.2rem;
         }
       }
 
@@ -118,5 +111,9 @@
       flex-direction: column;
       gap: 2.4rem;
     }
+  }
+
+  &__footer {
+    margin-top: -20em;
   }
 }

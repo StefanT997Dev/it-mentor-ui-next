@@ -13,34 +13,32 @@ const MentorListItem = ({ mentor }: Props) => {
 
     return (
         <>
-            <div className={classes.mentor} key={id}>
-                <Link href={`/it-kursevi/${id}`}>
-                    <div className={classes.mentor__image_container}>
-                        <Image
-                            className={classes.mentor__image_container__image}
-                            src={image}
-                            alt="Something"
-                        />
-                    </div>
-                    <div className={classes.mentor__title}>
-                        {firstName} {lastName}
-                    </div>
-                    <div className={classes.mentor__category}>
-                        {category}
-                    </div>
-                    <div className={classes.mentor__work_in}>
-                        {`radi u: ${worksAt}`}
-                    </div>
+            <Link className={classes.mentor} key={id} href={`/it-kursevi/${id}`}>
+                <Image
+                    className={classes.mentor__image}
+                    src={image}
+                    alt="Something"
+                />
+                <div className={classes.mentor__title}>
+                    {firstName} {lastName}
+                </div>
+                <div className={classes.mentor__category}>
+                    {category}
+                </div>
+                <div className={classes.mentor__works_in}>
+                    {`radi u: ${worksAt}`}
+                </div>
+                <div className={classes.mentor__skills}>
                     <SkillList skills={skills} isLimited />
-                    <div className={classes.mentor__bio}>
-                        {bio.length > 120 ? bio.slice(0, 117) : bio}...
-                    </div>
-                    <div className={classes.mentor__details}>
-                        DETALJNIJE
-                        <div className={classes.mentor__details__line} />
-                    </div>
-                </Link>
-            </div>
+                </div>
+                <div className={classes.mentor__bio}>
+                    {bio.length > 120 ? bio.slice(0, bio.lastIndexOf(" ", 117)) : bio}...
+                </div>
+                <div className={classes.mentor__details}>
+                    DETALJNIJE
+                    <div className={classes.mentor__details__line} />
+                </div>
+            </Link>
         </>
     )
 }
