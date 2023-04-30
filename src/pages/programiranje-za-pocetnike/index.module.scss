@@ -1,12 +1,115 @@
 @import "@/scss/colors";
 @import "@/scss/breakpoints";
+@import "@/scss/common_styles";
 
-.landing_client{
-  &__main_section{
+.landing_client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    color: $color-white;
     align-items: center;
     text-align: left;
+    justify-content: flex-start;
+    height: 78rem;
+    gap: 2em;
+
+    &__image_container {
+      @include backgroundImage();
+    }
+
+    &__title{
+      margin-top: 1.5em;
+      width: 90%;
+      font-size: 4.3rem;
+      font-family: Gilroy;
+    }
+
+    &__video {
+      position: relative;
+      width: 90%; /* adjust this value as needed */
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin: 0 auto; /* horizontally center the video wrapper */
+
+      &__responsive_iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__description{
+      width: 90%;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__storytelling {
+    width: 90%;
+
+    &__title {
+      font-size: 3rem;
+      font-family: Gilroy;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      font-family: GilroyLight;
+    }
+
+    &__image {
+      width: 100%;
+      margin-top: 2.5em;
+      height: auto;
+    }
+  }
+
+  &__mentors {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: $color-white;
+
+    &__image {
+      margin-top: 2.5em;
+      width: 100%;
+      height: auto;
+    }
+
+    &__card {
+      position: absolute;
+      top: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 2.2em;
+      width: 90%;
+      background: $color-dark-purple;
+      padding: 12% 12%;
+
+      &__title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+
+      &__description {
+        font-size: 1.8rem;
+      }
+
+      &__image {
+        width: 15%;
+        height: auto;
+      }
+    }
   }
 }

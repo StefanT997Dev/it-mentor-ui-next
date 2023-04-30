@@ -33,11 +33,6 @@ export default function Home() {
           />
         </div>
         <div className={classes.content__main}>
-          {!isMobile ? (
-            <div className={classes.content__main__logo}>
-              <Logo />
-            </div>
-          ) : <Logo />}
           <h1 className={classes.content__main__title}>
             Kako naći {isMobile ? <br /> : null}posao u IT sektoru
           </h1>

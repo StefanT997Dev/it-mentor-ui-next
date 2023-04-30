@@ -41,10 +41,24 @@ body {
 
 a{
   text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size: inherit;
 }
 
 h1, ul{
   margin: 0;
+}
+
+h2{
+  font-size: inherit;
+}
+
+iframe{
+  width: inherit;
+  height: inherit;
 }
 
 ul{
