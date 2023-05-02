@@ -12,6 +12,12 @@
 
     &__img {
         @include backgroundImage();
+
+        img {
+            @include above-mobile() {
+                height: fit-content;
+            }
+        }
     }
 
     &__main {
@@ -21,53 +27,51 @@
         margin-top: 7em;
         gap: 2em;
 
-        @include mobile(){
-            gap: 0.5em;
+        @include above-mobile {
+            gap: 1em;
+            margin-top: 3em;
         }
 
         &__title {
-            font-size: 8rem;
+            font-size: 3rem;
+            width: 90%;
             letter-spacing: 0.04em;
 
-            @include above-mobile() {
-                font-size: 6rem;
-            }
-
-            @include mobile() {
-                width: 90%;
-                font-size: 3rem;
+            @include above-mobile {
+                font-size: 2.5rem;
             }
         }
 
         &__description {
-            font-size: 2.4rem;
-            width: 50%;
+            font-size: 1.8rem;
+            width: 95%;
+            letter-spacing: 0.04em;
 
-            @include mobile() {
-                font-size: 1.8rem;
-                width: 95%;
-                letter-spacing: 0.04em;
+            @include above-mobile() {
+                font-size: 0.7rem;
+                width: 50%;
             }
         }
 
         &__client_container {
-            width: 20.73%;
-            height: 25em;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 75%;
+            height: 17em;
             font-size: 1.8rem;
             gap: 1em;
 
             background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(0.5rem);
-            border-radius: 0.5rem;
+            backdrop-filter: blur(0.2em);
+            border-radius: 0.5em;
 
-            @include mobile() {
-                width: 75%;
+            @include above-mobile() {
+                width: 21%;
                 height: 17em;
-                font-size: 1.8rem;
+                font-size: 0.7rem;
+                border-radius: 0.2em;
             }
 
             &__start_button {
@@ -81,8 +85,8 @@
                 color: $color-white;
                 border-radius: 0.5em;
 
-                @include mobile() {
-                    height: 5.9rem;
+                @include above-mobile() {
+                    padding: 1em;
                 }
 
                 &:hover {
@@ -92,10 +96,8 @@
 
             &__image_container {
                 &__image {
-                    @include mobile() {
-                        width: 35%;
-                        height: auto;
-                    }
+                    width: 35%;
+                    height: auto;
                 }
             }
 

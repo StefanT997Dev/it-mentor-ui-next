@@ -6,4 +6,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include above-mobile(){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2em;
+        width: 70%;
+    }
 }

@@ -31,7 +31,7 @@ const Mentors = () => {
                         <h1>IT Kursevi vs Razvoj projekta sa mentorom u 2023-oj</h1>
                     </div>
                     <div className={classes.mentors_page__content__subtitle}>
-                        <h2>Razlozi zašto je imati "personalnog trenera" u programiranju {!isMobile && <br />}bolje od klasičnog pohađanja nastave u učionici:</h2>
+                        <h2>Razlozi zašto je imati "personalnog trenera" u programiranju bolje od klasičnog {!isMobile && <br />}pohađanja nastave u učionici:</h2>
                     </div>
                     <div className={classes.mentors_page__content__description}>
                         - Nema dosadnih predavanja i smorenih profesora koji ti prenose zastarelo
@@ -55,7 +55,7 @@ const Mentors = () => {
                 <MentorsList exampleMentors={exampleMentors} />
             </div>
             <Menu />
-            <ClientContactButton />
+            {/* <ClientContactButton /> */}
             <div className={classes.footer}>
                 <Footer />
             </div>

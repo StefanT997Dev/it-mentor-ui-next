@@ -38,20 +38,22 @@ const MentorProfile = () => {
                     src={image}
                     className={classes.mentor_profile__header__image}
                     alt="Something" />
-                <div className={classes.mentor_profile__header__text}>
-                    <div className={classes.mentor_profile__header__text__title}>
-                        {firstName} {lastName}
+                <div className={classes.mentor_profile__header__content}>
+                    <div className={classes.mentor_profile__header__text}>
+                        <div className={classes.mentor_profile__header__text__title}>
+                            {firstName} {lastName}
+                        </div>
+                        <div className={classes.mentor_profile__header__text__category}>
+                            {category}
+                        </div>
+                        <div className={classes.mentor_profile__header__text__category}>
+                            {`radi u: ${worksAt}`}
+                        </div>
+                        <div className={classes.mentor_profile__header__skills}>
+                            <SkillList skills={skills} isLimited={false} />
+                        </div>
+                        <div className={classes.mentor_profile__header__text__bio}>{bio}</div>
                     </div>
-                    <div className={classes.mentor_profile__header__text__category}>
-                        {category}
-                    </div>
-                    <div className={classes.mentor_profile__header__text__category}>
-                        {`radi u: ${worksAt}`}
-                    </div>
-                    <div className={classes.mentor_profile__header__skills}>
-                        <SkillList skills={skills} isLimited={false} />
-                    </div>
-                    <div className={classes.mentor_profile__header__text__bio}>{bio}</div>
                 </div>
             </div>
             <div className={classes.mentor_profile__package_container}>
@@ -76,11 +78,11 @@ const MentorProfile = () => {
                     />
                 </div>
             </div>
-            <Menu />
+            {/* <Menu />
             <ClientContactButton />
             <div className={classes.mentor_profile__footer}>
                 <Footer />
-            </div>
+            </div> */}
         </div>
     );
 }

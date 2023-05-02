@@ -22,7 +22,7 @@ const Menu = () => {
           </svg>
         ) : (
           <svg
-            style={{ width: "1.8rem", height: "1.2rem" }}
+            className={classes.menu_button__lines}
             viewBox="0 0 18 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

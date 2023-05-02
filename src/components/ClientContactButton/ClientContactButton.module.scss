@@ -3,8 +3,10 @@
 
 .client_contact_button {
     position: fixed;
-    bottom: 8rem;
-    right: 7rem;
+    bottom: 1.17em;
+    width: 58%;
+    height: 2.9em;
+    margin: 0 auto;
 
     display: flex;
     align-items: center;
@@ -12,25 +14,17 @@
     background-color: $color-clients-cta-red;
     border-radius: 5px;
     box-shadow: 0px 18px 60px -12px rgba(255, 42, 104, 0.3);
-    padding: 2rem;
     z-index: 1000;
 
     font-family: Gilroy;
     font-style: normal;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
+    font-size: 1.8rem;
     color: $color-white;
 
-    @include mobile() {
-        position: fixed;
-        width: 25rem;
-        height: 7rem;
-        margin: 0 auto;
-        bottom: 2.8rem;
-        left: 0;
-        right: 0;
-        padding: 2.4rem 3.6rem;
-        font-size: 1.8rem;
-        line-height: 2.4rem;
+    @include above-mobile(){
+        right: 5%;
+        bottom: 10%;
+        width: 13%;
+        font-size: 0.6rem;
     }
 }

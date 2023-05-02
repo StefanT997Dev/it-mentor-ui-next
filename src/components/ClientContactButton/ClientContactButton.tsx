@@ -3,7 +3,7 @@ import classes from './ClientContactButton.module.scss';
 
 const ClientContactButton = () => (
     <Link href="/kontakt" className={classes.client_contact_button}>
-        Zakaži Konsultaciju
+        Zakaži konsultaciju
     </Link>
 );
 

@@ -9,10 +9,18 @@
     gap: 0.6rem;
     color: $color-dark-gray;
     
+    @include above-mobile(){
+        gap: 0.2rem;
+    }
+
     &__skill {
         background: $color-white-cream;
         border-radius: 1.4rem;
-        padding: 0.6rem 1.4rem;
+        padding: 0.6em 1.4em;
         font-size: 1.4rem;
+
+        @include above-mobile(){
+            font-size: 0.35rem;
+        }
     }
 }

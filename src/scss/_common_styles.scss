@@ -12,6 +12,10 @@
     width: 100%;
     height: fit-content;
     object-fit: cover;
+
+    @include above-mobile(){
+      height: 100vh;
+    }
   }
 }
 

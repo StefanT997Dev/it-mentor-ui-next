@@ -15,58 +15,80 @@
     align-items: center;
     width: 90%;
 
+    @include above-mobile() {
+      flex-direction: row;
+      width: 70%;
+      align-items: flex-start;
+      gap: 2em;
+    }
+
     &__image {
       margin-top: 13em;
       width: 100%;
       height: auto;
+
+      @include above-mobile() {
+        margin-top: 1em;
+      }
     }
 
-    &__skills{
+    &__content{
+      width: 100%;
+    }
+
+    &__skills {
       margin-top: 2em;
+      @include above-mobile(){
+        margin-top: 0.5em;
+      }
     }
 
     &__text {
       &__title {
         font-size: 4.8rem;
-        line-height: 5.8rem;
+        margin-top: 2.4rem;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
         letter-spacing: 0.04em;
         color: #15172C;
         font-family: Gilroy;
 
-        @include mobile() {
-          margin-top: 2.4rem;
-          font-size: 2.4rem;
-          line-height: 3.2rem;
+        @include above-mobile(){
+          font-size: 1.2rem;
+          line-height: 0rem;
+          margin-top: 1.2em;
+          margin-bottom: 0.6em;
         }
       }
 
       &__category {
-        margin-top: 2rem;
+        margin-top: 1.2rem;
         font-size: 1.8rem;
         line-height: 2rem;
         letter-spacing: 0.04em;
         color: #58595F;
         font-family: GilroyLight;
 
-        @include mobile() {
-          margin-top: 1.2rem;
-          font-size: 1.8rem;
-          line-height: 2rem;
+        @include above-mobile() {
+          line-height: 1rem;
+          font-size: 0.6rem;
+          margin-top: 0;
         }
       }
 
       &__bio {
-        margin-top: 5rem;
-        font-size: 2.4rem;
-        line-height: 2.7rem;
+        margin-top: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
         letter-spacing: 0.04em;
         color: #58595F;
         font-family: GilroyLight;
 
-        @include mobile() {
-          margin-top: 2.4rem;
-          font-size: 1.8rem;
+        @include above-mobile() {
           line-height: 2rem;
+          margin-top: 0.4em;
+          font-size: 0.6rem;
+          line-height: 2em;
         }
       }
     }

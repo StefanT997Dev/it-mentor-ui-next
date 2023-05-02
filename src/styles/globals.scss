@@ -31,6 +31,30 @@ html {
   @media (min-width: 713px) {
     font-size: 139.25%;
   }
+
+  @media(min-width: 1066px){
+    font-size: 150%;
+  }
+
+  @media(min-width: 1175px){
+    font-size: 160%;
+  }
+
+  @media(min-width: 1329px){
+    font-size: 180%;
+  }
+
+  @media(min-width: 1433px){
+    font-size: 200%;
+  }
+
+  @media(min-width: 1634px){
+    font-size: 220%;
+  }
+
+  @media(min-width: 1800px){
+    font-size: 240%;
+  }
 }
 
 body {
@@ -54,6 +78,7 @@ h1, ul{
 
 h2{
   font-size: inherit;
+  margin: 0;
 }
 
 iframe{

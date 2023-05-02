@@ -1,4 +1,5 @@
 @import "@/scss/breakpoints";
+@import "@/scss/colors";
 
 .clients_contact__info {
     color: black;
@@ -13,15 +14,17 @@
     justify-content: center;
     flex-direction: column;
 
-    &__content{
+    &__content {
         width: 90%;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 2em;
         text-align: center;
     }
 
-    &__back{
-        font-size: 2rem;
+    &__back {
+        font-size: 0.7rem;
         text-align: center;
+        color: $color-clients-cta-red;
     }
 }
