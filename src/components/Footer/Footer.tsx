@@ -4,7 +4,6 @@ import classes from "./Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div style={{ position: "relative" }}>
       <div className={classes.footer}>
         <div className={classes.footer__main_column}>
           <div className={classes.footer__main_column__title}>Kontakt</div>
@@ -27,7 +26,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
