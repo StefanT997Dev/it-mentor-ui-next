@@ -4,16 +4,16 @@ import ClientContactButton from "@/components/ClientContactButton/ClientContactB
 import Menu from "@/components/Menu/Menu";
 import SkillList from "@/components/SkillList/SkillList";
 import { useEffect } from "react";
-import useMobile from "@/hooks/useMobile";
 import Image from 'next/image';
 import PackageCard from "@/components/PackageCard/PackageCard";
 import { useRouter } from "next/router";
 import { exampleMentors } from "@/components/MentorsList/mentors";
+import useMobile from '@/hooks/useMobile';
 
 const MentorProfile = () => {
-
     const router = useRouter();
     const { id } = router.query;
+    const { isMobile } = useMobile();
 
     const filteredMentors = exampleMentors.filter(mentor => mentor.id === id);
     const desiredMentor = filteredMentors[0];
@@ -61,7 +61,7 @@ const MentorProfile = () => {
                     Odaberi paket koji ti odgovara!
                 </div>
                 <div className={classes.mentor_profile__package_container__sub_title}>
-                    Ukoliko ti ne odgovara nijedan od paketa, kontaktiraj nas
+                    Ukoliko ti ne odgovara nijedan od paketa, {!isMobile?<br/>:null}kontaktiraj nas
                 </div>
                 <div className={classes.mentor_profile__package_container__cards}>
                     <PackageCard
@@ -78,11 +78,11 @@ const MentorProfile = () => {
                     />
                 </div>
             </div>
-            {/* <Menu />
+            <Menu />
             <ClientContactButton />
             <div className={classes.mentor_profile__footer}>
                 <Footer />
-            </div> */}
+            </div>
         </div>
     );
 }

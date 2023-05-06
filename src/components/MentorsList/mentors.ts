@@ -220,7 +220,7 @@ export const exampleMentors = [
       `,
       image: StefanTosic,
       worksAt: 'ITACHI',
-      category: 'Fullstack Software Engineer',
+      category: 'Web Developer',
       skills: ['C#', 
       '.NET Core', 
       'React', 

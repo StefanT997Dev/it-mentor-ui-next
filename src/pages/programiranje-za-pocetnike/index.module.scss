@@ -83,6 +83,10 @@
   &__storytelling {
     width: 90%;
 
+    h2{
+      margin: 0.8em auto;
+    }
+
     @include above-mobile() {
       display: grid;
       grid-template-columns: 1fr 1fr;

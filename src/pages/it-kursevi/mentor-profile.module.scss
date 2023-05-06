@@ -20,6 +20,7 @@
       width: 70%;
       align-items: flex-start;
       gap: 2em;
+      margin-top: 3em;
     }
 
     &__image {
@@ -29,6 +30,7 @@
 
       @include above-mobile() {
         margin-top: 1em;
+        width: 50%;
       }
     }
 
@@ -39,15 +41,14 @@
     &__skills {
       margin-top: 2em;
       @include above-mobile(){
-        margin-top: 0.5em;
+        margin-top: 0.4em;
       }
     }
 
     &__text {
       &__title {
-        font-size: 4.8rem;
-        margin-top: 2.4rem;
         font-size: 2.4rem;
+        margin-top: 2.4rem;
         line-height: 3.2rem;
         letter-spacing: 0.04em;
         color: #15172C;
@@ -57,7 +58,7 @@
           font-size: 1.2rem;
           line-height: 0rem;
           margin-top: 1.2em;
-          margin-bottom: 0.6em;
+          margin-bottom: 0.8em;
         }
       }
 
@@ -72,14 +73,14 @@
         @include above-mobile() {
           line-height: 1rem;
           font-size: 0.6rem;
-          margin-top: 0;
+          margin-top: 0em;
         }
       }
 
       &__bio {
         margin-top: 2.4rem;
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 1.4em;
         letter-spacing: 0.04em;
         color: #58595F;
         font-family: GilroyLight;
@@ -101,7 +102,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 2em;
+
+    @include above-mobile(){
+      width: 70%;
+      gap: 0.8em;
+    }
 
     &__title {
       font-size: 2.4rem;
@@ -110,21 +116,26 @@
       color: #15172C;
       font-family: Gilroy;
       letter-spacing: 0.04em;
+
+      @include above-mobile(){
+        font-size: 1.2rem;
+        line-height: 1rem;
+      }
     }
 
     &__sub_title {
       max-width: 51rem;
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       line-height: 4rem;
+      max-width: 100%;
       font-weight: 800;
       color: #15172C;
       font-family: Gilroy;
       letter-spacing: 0.04em;
 
-      @include mobile() {
-        max-width: 100%;
-        font-size: 1.8rem;
-        line-height: 4rem;
+      @include above-mobile() {
+        font-size: 0.6rem;
+        line-height: 1.2rem;
       }
     }
 
@@ -132,6 +143,12 @@
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
+
+      @include above-mobile(){
+        flex-direction: row;
+        gap: 1.2em;
+        margin-bottom: 3em;
+      }
     }
   }
 

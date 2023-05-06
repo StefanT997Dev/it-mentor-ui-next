@@ -53,9 +53,9 @@ const Mentors = () => {
                 </div>
 
                 <MentorsList exampleMentors={exampleMentors} />
+                <ClientContactButton />
             </div>
             <Menu />
-            {/* <ClientContactButton /> */}
             <div className={classes.footer}>
                 <Footer />
             </div>

@@ -16,7 +16,9 @@ const SkillList = ({ skills, isLimited = false }: SkillListProps) => {
                     {s}
                 </div>
             ))}
-            {isLimited && '+'}
+            <div className={classes.skills_list__plus}>
+                {isLimited && '+'}
+            </div>
         </div>
     )
 }

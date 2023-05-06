@@ -203,7 +203,7 @@ const ClientLandingPage = () => {
                         />
                     </Link>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
                 <Menu />
             </div>
         </>

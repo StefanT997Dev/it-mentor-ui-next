@@ -1,5 +1,4 @@
 import React from "react";
-import WatermarkLogo from "../WatermarkLogo/WatermarkLogo";
 
 import classes from "./Footer.module.scss";
 
@@ -7,7 +6,6 @@ const Footer = () => {
   return (
     <div style={{ position: "relative" }}>
       <div className={classes.footer}>
-      {/* <WatermarkLogo className={classes.footer__watermark" /> */}
         <div className={classes.footer__main_column}>
           <div className={classes.footer__main_column__title}>Kontakt</div>
           <div className={classes.footer__main_column__sub_column}>

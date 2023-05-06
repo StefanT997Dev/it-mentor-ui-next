@@ -36,7 +36,7 @@ const MentorListItem = ({ mentor }: Props) => {
                 </div>
                 <div className={classes.mentor__details}>
                     DETALJNIJE
-                    <div className={classes.mentor__details__line} />
+                    {/* <div className={classes.mentor__details__line} /> */}
                 </div>
             </Link>
         </>
