@@ -194,7 +194,7 @@ const ClientLandingPage = () => {
                             MENTORI
                         </div>
                         <div className={classes.landing_client__mentors__card__description}>
-                            Pogledaj detaljnije naš <br /><br />tim i odaberi svog <br /><br />"ličnog trenera"
+                            Pogledaj detaljnije naš <br /><br />tim i odaberi svog <br /><br />ličnog trenera
                         </div>
                         <Image
                             src={ArrowRightImage}
