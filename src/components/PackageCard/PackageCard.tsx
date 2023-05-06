@@ -17,7 +17,7 @@ const PackageCard = (props: PackageCardProps) => {
             {title}
         </div>
         <ul className={classes.package_card__list}>
-            {list.map(l => <li>{l}</li>)}
+            {list.map(l => <li key={l}>{l}</li>)}
         </ul>
     </div>
 }
