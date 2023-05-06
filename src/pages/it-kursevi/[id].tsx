@@ -10,9 +10,18 @@ import { useRouter } from "next/router";
 import { exampleMentors } from "@/components/MentorsList/mentors";
 import useMobile from '@/hooks/useMobile';
 
-const MentorProfile = () => {
+export async function getServerSideProps({ params }: any) {
+    const { id } = params;
+
+    return {
+        props: {
+            id
+        }
+    };
+} 
+
+const MentorProfile = ({id}:any) => {
     const router = useRouter();
-    const { id } = router.query;
     const { isMobile } = useMobile();
 
     const filteredMentors = exampleMentors.filter(mentor => mentor.id === id);
@@ -61,7 +70,7 @@ const MentorProfile = () => {
                     Odaberi paket koji ti odgovara!
                 </div>
                 <div className={classes.mentor_profile__package_container__sub_title}>
-                    Ukoliko ti ne odgovara nijedan od paketa, {!isMobile?<br/>:null}kontaktiraj nas
+                    Ukoliko ti ne odgovara nijedan od paketa, {!isMobile ? <br /> : null}kontaktiraj nas
                 </div>
                 <div className={classes.mentor_profile__package_container__cards}>
                     <PackageCard
