@@ -4,8 +4,8 @@ import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/round-graphic-work.svg';
-import HomePageCover from '@/../public/home-page/home-page-cover.png';
-import HomePageCoverMobile from '@/../public/home-page/home-page-cover-mobile.png';
+import HomePageCover from '@/../public/home-page/home-page-cover.jpg';
+import HomePageCoverMobile from '@/../public/home-page/home-page-cover-mobile.jpg';
 import Logo from '@/components/Logo/Logo'
 import classes from './index.module.scss';
 import Menu from '@/components/Menu/Menu'
