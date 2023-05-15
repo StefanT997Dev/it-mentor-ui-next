@@ -3,13 +3,13 @@ import useMobile from "@/hooks/useMobile";
 import Head from "next/head";
 import Image from 'next/image';
 import Link from "next/link";
-import ClientLandingHeaderMobileImage from '@/../public/client-landing/client-landing-header-mobile.jpg';
-import ClientLandingHeaderImage from '@/../public/client-landing/client-landing-header.jpg';
-import ClientLandingTestimonialImage from '@/../public/client-landing/client-landing-testimonial.png';
-import ClientLandingCryImage from '@/../public/client-landing/client-landing-cry.png';
-import ClientLandingCryMobileImage from '@/../public/client-landing/client-landing-cry-mobile.png';
-import ClientLandingSmartMobileImage from '@/../public/client-landing/client-landing-smart-mobile.png';
-import ClientLandingSmartImage from '@/../public/client-landing/client-landing-smart.png';
+import ClientLandingHeaderMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-mobilni.jpg';
+import ClientLandingHeaderImage from '@/../public/client-landing/programiranje-za-pocetnike-desktop.jpg';
+import ClientLandingTestimonialImage from '@/../public/client-landing/programiranje-za-pocetnike-4.jpg';
+import ClientLandingCryImage from '@/../public/client-landing/programiranje-za-pocetnike-2-desktop.jpg';
+import ClientLandingCryMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-2-mobilni.jpg';
+import ClientLandingSmartMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-3-mobilni.jpg';
+import ClientLandingSmartImage from '@/../public/client-landing/programiranje-za-pocetnike-3-desktop.jpg';
 import ClientLandingElonMuskImage from '@/../public/client-landing/client-landing-elon-musk.png';
 import ClientLandingStudyMobileImage from '@/../public/client-landing/client-landing-study-mobile.png';
 import ClientLandingStudyImage from '@/../public/client-landing/client-landing-study.png';
@@ -40,7 +40,7 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__header__image_container__image}
                             src={isMobile ? ClientLandingHeaderMobileImage : ClientLandingHeaderImage}
-                            alt='Something' />
+                            alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca' />
                     </div>
                     <div className={classes.landing_client__header__title}>
                         <h1>Korak do četvorocifrene plate, spreman?</h1>
@@ -75,7 +75,7 @@ const ClientLandingPage = () => {
                         <Image
                             src={isMobile ? ClientLandingCryMobileImage : ClientLandingCryImage}
                             className={classes.landing_client__storytelling__image}
-                            alt="Something"
+                            alt="Osoba je tužna i plače zbog neuspeha kao posledica primanja odbijenica od strane firmi nakon završenog fakulteta"
                         />
                     </div>
 
@@ -107,7 +107,7 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__storytelling__image}
                             src={isMobile ? ClientLandingSmartMobileImage : ClientLandingSmartImage}
-                            alt="Something"
+                            alt="Uspešan momak prekrštenih ruku stoji ponosno, time pokazujući da je i za polaznika mentorstva moguće doći do visoko plaćenog posla u IT sektoru"
                         />
                     </div>
 

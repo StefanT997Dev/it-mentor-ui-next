@@ -4,8 +4,8 @@ import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/round-graphic-work.svg';
-import HomePageCover from '@/../public/home-page/home-page-cover.jpg';
-import HomePageCoverMobile from '@/../public/home-page/home-page-cover-mobile.jpg';
+import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
+import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import Logo from '@/components/Logo/Logo'
 import classes from './index.module.scss';
 import Menu from '@/components/Menu/Menu'
@@ -21,7 +21,7 @@ export default function Home() {
         <title>IT Obuke | Provera koda na svakom koraku tvog razvoja</title>
         <meta
           name='description'
-          content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa IT ekspertom'
+          content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa softverskim inženjerom iz industrije'
         ></meta>
       </Head>
 
@@ -29,7 +29,7 @@ export default function Home() {
         <div className={classes.content__img}>
           <Image
             src={isMobile ? HomePageCoverMobile : HomePageCover}
-            alt="Something"
+            alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
           />
         </div>
         <div className={classes.content__main}>
