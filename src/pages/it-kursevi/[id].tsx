@@ -46,7 +46,8 @@ const MentorProfile = ({id}:any) => {
                 <Image
                     src={image}
                     className={classes.mentor_profile__header__image}
-                    alt="Something" />
+                    alt="Something"
+                    sizes='100vw' />
                 <div className={classes.mentor_profile__header__content}>
                     <div className={classes.mentor_profile__header__text}>
                         <div className={classes.mentor_profile__header__text__title}>

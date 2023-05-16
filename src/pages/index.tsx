@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
-import RoundGraphicWorkImage from '@/../public/round-graphic-work.svg';
+import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
 import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
 import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import Logo from '@/components/Logo/Logo'
@@ -30,6 +30,7 @@ export default function Home() {
           <Image
             src={isMobile ? HomePageCoverMobile : HomePageCover}
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
+            sizes='100vw'
           />
         </div>
         <div className={classes.content__main}>
@@ -51,7 +52,8 @@ export default function Home() {
             <Image
               className={classes.content__main__client_container__image_container__image}
               src={RoundGraphicWorkImage}
-              alt={''} />
+              alt='Samopouzdani mentor sa entuzijastičnim stavom'
+              sizes='100vw' />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
                 Treba ti više informacija?

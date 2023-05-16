@@ -18,6 +18,7 @@ const MentorListItem = ({ mentor }: Props) => {
                     className={classes.mentor__image}
                     src={image}
                     alt="Something"
+                    sizes='100vw'
                 />
                 <div className={classes.mentor__title}>
                     {firstName} {lastName}
