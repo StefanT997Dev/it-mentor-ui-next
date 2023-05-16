@@ -3,6 +3,12 @@ import useMobile from "@/hooks/useMobile";
 import Link from "next/link";
 import classes from "./index.module.scss";
 
+export async function getStaticProps() {
+    return {
+        props: {}
+    };
+}
+
 const ClientContactPage = () => {
     const { isMobile } = useMobile();
 

@@ -9,6 +9,12 @@ import { useEffect } from "react";
 import classes from './index.module.scss';
 import { exampleMentors } from "@/components/MentorsList/mentors";
 
+export async function getStaticProps() {
+    return {
+        props: {}
+    };
+}
+
 const Mentors = () => {
     const { isMobile } = useMobile();
 

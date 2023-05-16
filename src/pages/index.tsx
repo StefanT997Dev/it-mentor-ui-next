@@ -12,6 +12,12 @@ import Menu from '@/components/Menu/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export async function getStaticProps() {
+  return {
+    props: {}
+  };
+}
+
 export default function Home() {
   const { isMobile } = useMobile();
 

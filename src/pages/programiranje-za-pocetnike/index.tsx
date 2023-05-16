@@ -22,6 +22,12 @@ import Logo from "@/components/Logo/Logo";
 import Menu from "@/components/Menu/Menu";
 import classes from './index.module.scss';
 
+export async function getStaticProps() {
+    return {
+        props: {}
+    };
+}
+
 const ClientLandingPage = () => {
     const { isMobile } = useMobile();
 
