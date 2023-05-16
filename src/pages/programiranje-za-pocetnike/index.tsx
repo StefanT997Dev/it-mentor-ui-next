@@ -40,8 +40,8 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__header__image_container__image}
                             src={isMobile ? ClientLandingHeaderMobileImage : ClientLandingHeaderImage}
-                            alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca' 
-                            sizes='100vw'/>
+                            alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca'
+                            sizes='100vw' />
                     </div>
                     <div className={classes.landing_client__header__title}>
                         <h1>Korak do četvorocifrene plate, spreman?</h1>

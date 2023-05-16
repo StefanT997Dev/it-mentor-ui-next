@@ -15,6 +15,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const { isMobile } = useMobile();
 
+  const customLoader = ({src}:any) => {
+    return src;
+  };
+
   return (
     <>
       <Head>
@@ -31,6 +35,7 @@ export default function Home() {
             src={isMobile ? HomePageCoverMobile : HomePageCover}
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
+            loader={customLoader}
           />
         </div>
         <div className={classes.content__main}>
