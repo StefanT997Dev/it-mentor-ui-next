@@ -10,13 +10,13 @@ import ClientLandingCryImage from '@/../public/client-landing/programiranje-za-p
 import ClientLandingCryMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-2-mobilni.jpg';
 import ClientLandingSmartMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-3-mobilni.jpg';
 import ClientLandingSmartImage from '@/../public/client-landing/programiranje-za-pocetnike-3-desktop.jpg';
-import ClientLandingElonMuskImage from '@/../public/client-landing/client-landing-elon-musk.png';
-import ClientLandingStudyMobileImage from '@/../public/client-landing/client-landing-study-mobile.png';
-import ClientLandingStudyImage from '@/../public/client-landing/client-landing-study.png';
-import ClientLandingPeerProgrammingImage from '@/../public/client-landing/client-landing-peer-programming.png';
-import OfficeImageMobile from '@/../public/client-landing/client-landing-office-mobile.png';
-import OfficeImage from '@/../public/client-landing/client-landing-office.png';
-import ArrowRightImage from '@/../public/client-landing/client-landing-arrow-right.png';
+import ClientLandingElonMuskImage from '@/../public/client-landing/programiranje-za-pocetnike-5.jpg';
+import ClientLandingStudyMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-6-mobilni.jpg';
+import ClientLandingStudyImage from '@/../public/client-landing/programiranje-za-pocetnike-6-desktop.jpg';
+import ClientLandingPeerProgrammingImage from '@/../public/client-landing/programiranje-za-pocetnike-7.jpg';
+import OfficeImageMobile from '@/../public/client-landing/programiranje-za-pocetnike-8-mobilni.jpg';
+import OfficeImage from '@/../public/client-landing/programiranje-za-pocetnike-8-desktop.jpg';
+import ArrowRightImage from '@/../public/client-landing/programiranje-za-pocetnike-9.png';
 import Footer from "@/components/Footer/Footer";
 import Logo from "@/components/Logo/Logo";
 import Menu from "@/components/Menu/Menu";
@@ -127,7 +127,7 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__storytelling__image}
                             src={ClientLandingElonMuskImage}
-                            alt="Something"
+                            alt="Karikatura Elon Musk-a koji pokazuje podignut palac nagoveštavajući da diploma nije potrebna kako bi neko postao programer"
                         />
                     </div>
 
@@ -135,7 +135,7 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__storytelling__image}
                             src={isMobile ? ClientLandingStudyMobileImage : ClientLandingStudyImage}
-                            alt="Something"
+                            alt="Momak sa naočarama sedi kraj laptopa i uči programiranje samostalno"
                         />
                         <div className={classes.landing_client__storytelling__self_education__text}>
                             <div className={classes.landing_client__storytelling__title}>
@@ -175,7 +175,7 @@ const ClientLandingPage = () => {
                         <Image
                             className={classes.landing_client__storytelling__image}
                             src={ClientLandingPeerProgrammingImage}
-                            alt="Something"
+                            alt="Karikaturna slika iskusnog programera koji pokazuje programiranje početniku putem online video platforme"
                         />
                     </div>
                 </div>
@@ -184,7 +184,7 @@ const ClientLandingPage = () => {
                     <Image
                         className={classes.landing_client__mentors__image}
                         src={isMobile ? OfficeImageMobile : OfficeImage}
-                        alt="Something"
+                        alt="Više programera u kancelariji programira na računaru"
                     />
                     <Link
                         href="/it-kursevi"
@@ -199,7 +199,7 @@ const ClientLandingPage = () => {
                         <Image
                             src={ArrowRightImage}
                             className={classes.landing_client__mentors__card__image}
-                            alt="Something"
+                            alt="Strelica koja pokazuje na desno"
                         />
                     </Link>
                 </div>
