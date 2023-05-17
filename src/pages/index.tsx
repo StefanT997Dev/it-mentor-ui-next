@@ -25,6 +25,10 @@ export default function Home() {
     <>
       <Head>
         <title>IT Obuke | Provera koda na svakom koraku tvog razvoja</title>
+        <link rel="preload" href="_next/static/media/Gilroy-Bold.a112078e.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="_next/static/media/Gilroy-ExtraBold.c16f19cc.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="_next/static/media/Gilroy-Thin.9dd1be1b.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="_next/static/media/Gilroy.40753d62.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <meta
           name='description'
           content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa softverskim inženjerom iz industrije'
