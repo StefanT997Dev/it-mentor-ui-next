@@ -63,6 +63,10 @@ export default function Home() {
               sizes='100vw' 
               // placeholder='blur' 
             />
+            <img src='../..//public/home-page/it-obuke-desktop.jpg' alt=""/>
+            <img src='../..//public/home-page/it-obuke-desktop.jpg' alt=""/>
+            <img src='../..//public/home-page/it-obuke-desktop.jpg' alt=""/>
+            <img src='../..//public/home-page/it-obuke-desktop.jpg' alt=""/>
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
                 Treba ti više informacija?
