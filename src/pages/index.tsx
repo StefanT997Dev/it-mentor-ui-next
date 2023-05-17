@@ -37,6 +37,7 @@ export default function Home() {
             src={isMobile ? HomePageCoverMobile : HomePageCover}
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
+            placeholder='blur'
           />
         </div>
         <div className={classes.content__main}>
