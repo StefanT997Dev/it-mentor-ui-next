@@ -35,10 +35,6 @@ const ClientLandingPage = () => {
         <>
             <Head>
                 <title>Programiranje za početnike | Korak do četvorocifrene plate</title>
-                <link rel="preload" href="_next/static/media/Gilroy-Bold.a112078e.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-                <link rel="preload" href="_next/static/media/Gilroy-ExtraBold.c16f19cc.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-                <link rel="preload" href="_next/static/media/Gilroy-Thin.9dd1be1b.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-                <link rel="preload" href="_next/static/media/Gilroy.40753d62.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
                 <meta
                     name='description'
                     content='Zvuči nemoguće? IT svet je prepun ljudi koji su dostigli ono što želiš, isti ljudi su tu kod nas kako bi i tebe doveli do cilja.'
