@@ -47,7 +47,8 @@ const ClientLandingPage = () => {
                             className={classes.landing_client__header__image_container__image}
                             src={isMobile ? ClientLandingHeaderMobileImage : ClientLandingHeaderImage}
                             alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca'
-                            sizes='100vw' />
+                            sizes='100vw'
+                            placeholder='blur' />
                     </div>
                     <div className={classes.landing_client__header__title}>
                         <h1>Korak do četvorocifrene plate, spreman?</h1>
@@ -124,6 +125,7 @@ const ClientLandingPage = () => {
                             className={classes.landing_client__storytelling__image}
                             alt="Osoba je tužna i plače zbog neuspeha kao posledica primanja odbijenica od strane firmi nakon završenog fakulteta"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </div>
 
@@ -142,6 +144,7 @@ const ClientLandingPage = () => {
                             className={classes.landing_client__storytelling__image}
                             alt="Something"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </div>
 
@@ -158,6 +161,7 @@ const ClientLandingPage = () => {
                             src={isMobile ? ClientLandingSmartMobileImage : ClientLandingSmartImage}
                             alt="Uspešan momak prekrštenih ruku stoji ponosno, time pokazujući da je i za polaznika mentorstva moguće doći do visoko plaćenog posla u IT sektoru"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </div>
 
@@ -179,6 +183,7 @@ const ClientLandingPage = () => {
                             src={ClientLandingElonMuskImage}
                             alt="Karikatura Elon Musk-a koji pokazuje podignut palac nagoveštavajući da diploma nije potrebna kako bi neko postao programer"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </div>
 
@@ -188,6 +193,7 @@ const ClientLandingPage = () => {
                             src={isMobile ? ClientLandingStudyMobileImage : ClientLandingStudyImage}
                             alt="Momak sa naočarama sedi kraj laptopa i uči programiranje samostalno"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                         <div className={classes.landing_client__storytelling__self_education__text}>
                             <div className={classes.landing_client__storytelling__title}>
@@ -229,6 +235,7 @@ const ClientLandingPage = () => {
                             src={ClientLandingPeerProgrammingImage}
                             alt="Karikaturna slika iskusnog programera koji pokazuje programiranje početniku putem online video platforme"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </div>
                 </div>
@@ -239,6 +246,7 @@ const ClientLandingPage = () => {
                         src={isMobile ? OfficeImageMobile : OfficeImage}
                         alt="Više programera u kancelariji programira na računaru"
                         sizes='100vw'
+                        placeholder='blur'
                     />
                     <Link
                         href="/it-kursevi"
@@ -255,6 +263,7 @@ const ClientLandingPage = () => {
                             className={classes.landing_client__mentors__card__image}
                             alt="Strelica koja pokazuje na desno"
                             sizes='100vw'
+                            placeholder='blur'
                         />
                     </Link>
                 </div>

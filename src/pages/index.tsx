@@ -60,7 +60,9 @@ export default function Home() {
               className={classes.content__main__client_container__image_container__image}
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
-              sizes='100vw' />
+              sizes='100vw' 
+              // placeholder='blur' 
+            />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
                 Treba ti više informacija?

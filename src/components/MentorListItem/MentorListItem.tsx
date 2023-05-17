@@ -19,6 +19,7 @@ const MentorListItem = ({ mentor }: Props) => {
                     src={image}
                     alt="Something"
                     sizes='100vw'
+                    placeholder='blur'
                 />
                 <div className={classes.mentor__title}>
                     {firstName} {lastName}
