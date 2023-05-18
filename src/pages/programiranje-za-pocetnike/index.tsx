@@ -45,7 +45,7 @@ const ClientLandingPage = () => {
                     <div className={classes.landing_client__header__image_container}>
                         <Image
                             className={classes.landing_client__header__image_container__image}
-                            src={isMobile ? ClientLandingHeaderMobileImage : ClientLandingHeaderImage}
+                            src={ClientLandingHeaderMobileImage}
                             alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca'
                             sizes='100vw'
                             placeholder='blur' />
@@ -121,7 +121,7 @@ const ClientLandingPage = () => {
                             je bio moj ishod na četvrtoj godini fakulteta…
                         </div>
                         <Image
-                            src={isMobile ? ClientLandingCryMobileImage : ClientLandingCryImage}
+                            src={ClientLandingCryMobileImage}
                             className={classes.landing_client__storytelling__image}
                             alt="Osoba je tužna i plače zbog neuspeha kao posledica primanja odbijenica od strane firmi nakon završenog fakulteta"
                             sizes='100vw'
