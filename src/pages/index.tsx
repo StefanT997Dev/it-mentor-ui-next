@@ -3,11 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
-import HomePageCover from '@/../public/it-obuke-desktop.webp';
-import HomePageCoverMobile from '@/../public/it-obuke-mobilni.svg';
-import Logo from '@/components/Logo/Logo'
+import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
+import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import classes from './index.module.scss';
-import Menu from '@/components/Menu/Menu'
 
 export async function getStaticProps() {
   return {
@@ -35,6 +33,7 @@ export default function Home() {
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
             placeholder='blur'
+            priority={true}
           />
         </div>
         <div className={classes.content__main}>
@@ -58,7 +57,7 @@ export default function Home() {
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
               sizes='100vw' 
-              // placeholder='blur' 
+              priority={true}
             />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
