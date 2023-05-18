@@ -3,8 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
-import HomePageCover from '@/../public/it-obuke-desktop.jpg';
-import HomePageCoverMobile from '@/../public/it-obuke-mobilni.jpg';
+import HomePageCover from '@/../public/it-obuke-desktop.webp';
+import HomePageCoverMobile from '@/../public/it-obuke-mobilni.svg';
 import Logo from '@/components/Logo/Logo'
 import classes from './index.module.scss';
 import Menu from '@/components/Menu/Menu'
