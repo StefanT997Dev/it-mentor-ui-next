@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
+import HomePageCover from '@/../public/it-obuke-desktop.jpg';
+import HomePageCoverMobile from '@/../public/it-obuke-mobilni.jpg';
 import Logo from '@/components/Logo/Logo'
 import classes from './index.module.scss';
 import Menu from '@/components/Menu/Menu'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export async function getStaticProps() {
   return {
@@ -18,7 +17,6 @@ export async function getStaticProps() {
 
 export default function Home() {
   const { isMobile } = useMobile();
-  const remoteImage = isMobile? 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg' : 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
   return (
     <>
@@ -33,13 +31,10 @@ export default function Home() {
       <div className={classes.content}>
         <div className={classes.content__img}>
           <Image
-            src={remoteImage}
+            src={isMobile? HomePageCoverMobile : HomePageCover}
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
             placeholder='blur'
-            width={428}
-            height={926}
-            blurDataURL={remoteImage}
           />
         </div>
         <div className={classes.content__main}>
