@@ -9,6 +9,7 @@
     font-weight: 800;
     text-align: center;
     align-items: center;
+    font-family: 'Gilroy';
 
     &__img {
         @include backgroundImage();

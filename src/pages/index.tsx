@@ -7,11 +7,26 @@ import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
 import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import classes from './index.module.scss';
 
-export async function getStaticProps() {
-  return {
-    props: {}
-  };
-}
+// interface MyPageContext {
+//   req: NextRequest;
+//   res: NextResponse;
+// }
+
+// export async function getServerSideProps(context: MyPageContext) {
+//   const { req } = context;
+//   const {device} = userAgent(req.headers);
+//   const isMobile = device.type === 'mobile' ? true : false
+
+//   return {
+//     props: {
+//       isMobile,
+//     },
+//   };
+// }
+
+// interface HomePageProps {
+//   isMobile: boolean;
+// }
 
 export default function Home() {
   const { isMobile } = useMobile();
@@ -20,6 +35,13 @@ export default function Home() {
     <>
       <Head>
         <title>IT Obuke | Provera koda na svakom koraku tvog razvoja</title>
+        <link
+          rel="preload"
+          href="../../Gilroy-ExtraBold.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <meta
           name='description'
           content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa softverskim inženjerom iz industrije'
@@ -29,11 +51,11 @@ export default function Home() {
       <div className={classes.content}>
         <div className={classes.content__img}>
           <Image
-            src={isMobile? HomePageCoverMobile : HomePageCover}
+            src={isMobile ? HomePageCoverMobile : HomePageCover}
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
             placeholder='blur'
-            priority={true}
+            //priority={true}
           />
         </div>
         <div className={classes.content__main}>
@@ -56,8 +78,8 @@ export default function Home() {
               className={classes.content__main__client_container__image_container__image}
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
-              sizes='100vw' 
-              priority={true}
+              sizes='100vw'
+              //priority={true}
             />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
