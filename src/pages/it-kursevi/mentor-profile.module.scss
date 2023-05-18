@@ -52,7 +52,6 @@
         line-height: 3.2rem;
         letter-spacing: 0.04em;
         color: #15172C;
-        font-family: Gilroy;
 
         @include above-mobile(){
           font-size: 1.2rem;
@@ -68,7 +67,6 @@
         line-height: 2rem;
         letter-spacing: 0.04em;
         color: #58595F;
-        font-family: GilroyLight;
 
         @include above-mobile() {
           line-height: 1rem;
@@ -83,7 +81,6 @@
         line-height: 1.4em;
         letter-spacing: 0.04em;
         color: #58595F;
-        font-family: GilroyLight;
 
         @include above-mobile() {
           line-height: 2rem;
@@ -114,7 +111,6 @@
       line-height: 4rem;
       font-weight: 800;
       color: #15172C;
-      font-family: Gilroy;
       letter-spacing: 0.04em;
 
       @include above-mobile(){
@@ -130,7 +126,6 @@
       max-width: 100%;
       font-weight: 800;
       color: #15172C;
-      font-family: Gilroy;
       letter-spacing: 0.04em;
 
       @include above-mobile() {

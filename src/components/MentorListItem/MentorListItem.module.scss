@@ -36,7 +36,6 @@
     font-size: 2.4rem;
     letter-spacing: 0.04em;
     color: $color-dark-purple;
-    font-family: Gilroy;
 
     @include above-mobile(){
       font-size: 1.2rem;
@@ -55,7 +54,6 @@
   &__works_in {
     font-size: 1.8rem;
     letter-spacing: 0.04rem;
-    font-family: GilroyLight;
     font-style: normal;
     margin-bottom: 0.2em;
 
@@ -68,7 +66,6 @@
     font-size: 1.8rem;
     line-height: 3rem;
     letter-spacing: 0.04em;
-    font-family: GilroyLight;
 
     @include above-mobile(){
       font-size: 0.45rem;

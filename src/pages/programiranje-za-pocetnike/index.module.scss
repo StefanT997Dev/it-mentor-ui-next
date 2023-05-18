@@ -34,7 +34,6 @@
       margin-top: 1.5em;
       width: 90%;
       font-size: 4.3rem;
-      font-family: Gilroy;
 
       @include above-mobile() {
         margin-left: 15%;
@@ -189,7 +188,6 @@
 
     &__title {
       font-size: 3rem;
-      font-family: Gilroy;
 
       @include above-mobile() {
         font-size: 1.6rem;
@@ -200,7 +198,6 @@
 
     &__description {
       font-size: 1.8rem;
-      font-family: GilroyLight;
 
       @include above-mobile() {
         font-size: 0.8rem;

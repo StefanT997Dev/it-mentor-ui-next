@@ -35,13 +35,6 @@ export default function Home() {
     <>
       <Head>
         <title>IT Obuke | Provera koda na svakom koraku tvog razvoja</title>
-        <link
-          rel="preload"
-          href="../../Gilroy-ExtraBold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
         <meta
           name='description'
           content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa softverskim inženjerom iz industrije'
