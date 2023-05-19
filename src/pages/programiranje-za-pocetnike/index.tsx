@@ -48,7 +48,8 @@ const ClientLandingPage = () => {
                             src={ClientLandingHeaderMobileImage}
                             alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca'
                             sizes='100vw'
-                            placeholder='blur' />
+                            placeholder='blur'
+                            priority={true} />
                     </div>
                     <div className={classes.landing_client__header__title}>
                         <h1>Korak do četvorocifrene plate, spreman?</h1>
@@ -126,6 +127,7 @@ const ClientLandingPage = () => {
                             alt="Osoba je tužna i plače zbog neuspeha kao posledica primanja odbijenica od strane firmi nakon završenog fakulteta"
                             sizes='100vw'
                             placeholder='blur'
+                            priority={true}
                         />
                     </div>
 
@@ -145,6 +147,7 @@ const ClientLandingPage = () => {
                             alt="Something"
                             sizes='100vw'
                             placeholder='blur'
+                            priority={true}
                         />
                     </div>
 
