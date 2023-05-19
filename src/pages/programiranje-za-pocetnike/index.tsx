@@ -24,7 +24,9 @@ import classes from './index.module.scss';
 
 export async function getStaticProps() {
     return {
-        props: {},
+        props: {
+            
+        },
         // Enable ISR with a revalidation time of 60 seconds (1 minute)
         revalidate: 60,
     };
@@ -47,11 +49,12 @@ const ClientLandingPage = () => {
                     <div className={classes.landing_client__header__image_container}>
                         <Image
                             className={classes.landing_client__header__image_container__image}
-                            src={ClientLandingHeaderMobileImage}
+                            src={isMobile? ClientLandingHeaderMobileImage: ClientLandingHeaderImage}
                             alt='Kancelarija sa Kancelarijskim stolom, stolicom i računarima, koja gleda na izlazak sunca'
                             sizes='100vw'
                             placeholder='blur'
-                            priority={true} />
+                            //priority={true} 
+                        />
                     </div>
                     <div className={classes.landing_client__header__title}>
                         <h1>Korak do četvorocifrene plate, spreman?</h1>
@@ -124,12 +127,12 @@ const ClientLandingPage = () => {
                             je bio moj ishod na četvrtoj godini fakulteta…
                         </div>
                         <Image
-                            src={ClientLandingCryMobileImage}
+                            src={isMobile? ClientLandingCryMobileImage : ClientLandingCryImage}
                             className={classes.landing_client__storytelling__image}
                             alt="Osoba je tužna i plače zbog neuspeha kao posledica primanja odbijenica od strane firmi nakon završenog fakulteta"
                             sizes='100vw'
                             placeholder='blur'
-                            priority={true}
+                            //priority={true}
                         />
                     </div>
 
@@ -149,7 +152,7 @@ const ClientLandingPage = () => {
                             alt="Something"
                             sizes='100vw'
                             placeholder='blur'
-                            priority={true}
+                            //priority={true}
                         />
                     </div>
 
