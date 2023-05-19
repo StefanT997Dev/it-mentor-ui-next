@@ -24,7 +24,9 @@ import classes from './index.module.scss';
 
 export async function getStaticProps() {
     return {
-        props: {}
+        props: {},
+        // Enable ISR with a revalidation time of 60 seconds (1 minute)
+        revalidate: 60,
     };
 }
 
