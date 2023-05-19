@@ -48,7 +48,6 @@ export default function Home() {
             alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
             sizes='100vw'
             placeholder='blur'
-            loading="eager"
             //priority={true}
           />
         </div>
@@ -73,7 +72,6 @@ export default function Home() {
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
               sizes='100vw'
-              loading="eager"
               //priority={true}
             />
             <div className={classes.content__main__client_container__got_account}>
