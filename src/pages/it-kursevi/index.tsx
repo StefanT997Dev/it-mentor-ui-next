@@ -55,6 +55,62 @@ const Mentors = () => {
                         <br />
                         - Kada učiš sam, često ćeš se naći u situaciji da ne znaš kako dalje. U mentorstvu, imaćeš nekoga ko će ti dati
                         savet i izbaviti iz problema.
+                        <br />
+                        <br />
+                    </div>
+                    <div className={classes.mentors_page__content__subtitle}>
+                        <h2>Online način rada</h2>
+                    </div>
+                    <div className={classes.mentors_page__content__description}>
+                        Mentorstvo u programiranju pruža dodatne prednosti i fleksibilnost u procesu učenja.
+                        Neki od benefita su:
+                        <br />
+                        <br />
+                        <strong>Pristupačnost:</strong> Bez obzira na to gde se nalaziš, pronaći ćeš stručnog mentora
+                        iz bilo koje regije ili zemlje. Nema geografskih ograničenja, pa ćeš imati
+                        mogućnost odabira između raznih tutora sa različitim iskustvom i veštinama.
+                        <br />
+                        <br />
+                        <strong>Fleksibilnost vremena:</strong> Online mentorstvo omogućiće ti učenje prilagodeno tvom rasporedu.
+                        Nema potrebe za putovanjem do određenog mesta ili pridržavanjem vremena nastave.
+                        <br />
+                        <br />
+                        Možeš se dogovoriti s’ mentorom o terminima koji ti najviše odgovaraju,
+                        što je posebno korisno ako imaš druge obaveze.
+                        <br />
+                        <br />
+                    </div>
+                    <div className={classes.mentors_page__content__subtitle}>
+                        <h2>It sertifikat vs pisane preporuke</h2>
+                    </div>
+                    <div className={classes.mentors_page__content__description}>
+                        Jedna od značajnih razlika između mentorstva u programiranju i klasičnih kurseva
+                        ili fakulteta je pristup izdavanju sertifikata po završetku obuke.
+                        <br />
+                        <br />
+                        Dok se u tradicionalnom obrazovnom sistemu često ističe važnost sertifikata,
+                        mentorstvo donosi nešto drugačiji pristup.
+                        <br />
+                        <br />
+                        Kod nas, nakon završetka mentorstva, dobćeš nešto mnogo vrednije od običnog papira
+                        - direktnu pisanu preporuku mentora sa kojim si radio.
+                        <br />
+                        <br />
+                        Ova preporuka ne samo da će pokazati tvoje uspehe i veštine, već će
+                        biti prilagođena tvojim tačnim kvalifikacijama i dostignućima.
+                        <br />
+                        <br />
+                        To znači da ćeš imati konkretan dokument koji ističe tvoje stvarne
+                        sposobnosti i radno iskustvo, pružajući potencijalnim poslodavcima
+                        ili klijentima dublji uvid u tvoje kvalifikacije.
+                        <br />
+                        <br />
+                        Poredeći ovo sa dobijanjem sertifikata na kursevima ili fakultetima,
+                        može se reći da ti tradicionalni sertifikati ne pružaju stvarnu vrednost.
+                        <br />
+                        <br />
+                        Oni su često beskorisni papiri koji samo potvrđuju da si proveo određeno vreme
+                        u učionici ili prošao određeni ispit.
                     </div>
                 </div>
 
