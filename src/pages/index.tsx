@@ -9,32 +9,32 @@ import classes from './index.module.scss';
 import dynamic from 'next/dynamic';
 import lqip from 'lqip-modern';
 
-export const getStaticProps = async() => {
+export const getStaticProps = async () => {
   const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
   const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
-  const mobileImageData = await fetch (mobileImageUrl);
+  const mobileImageData = await fetch(mobileImageUrl);
   const mobileArrayBufferData = await mobileImageData.arrayBuffer();
-  const mobileLowQualityImagePlaceholder = await lqip(Buffer.from(mobileArrayBufferData)); 
+  const mobileLowQualityImagePlaceholder = await lqip(Buffer.from(mobileArrayBufferData));
 
-  const desktopImageData = await fetch (desktopImageUrl);
+  const desktopImageData = await fetch(desktopImageUrl);
   const desktopArrayBufferData = await desktopImageData.arrayBuffer();
-  const desktopLowQualityImagePlaceholder = await lqip(Buffer.from(desktopArrayBufferData)); 
+  const desktopLowQualityImagePlaceholder = await lqip(Buffer.from(desktopArrayBufferData));
 
   return {
-    props:{
+    props: {
       lqipMobile: mobileLowQualityImagePlaceholder.metadata.dataURIBase64,
       lqipDesktop: desktopLowQualityImagePlaceholder.metadata.dataURIBase64
     }
   }
 }
 
-interface HomeProps{
+interface HomeProps {
   lqipMobile: string,
   lqipDesktop: string
 }
 
-export default function Home({lqipMobile, lqipDesktop}: HomeProps) {
+export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
   const { isMobile } = useMobile();
 
   const Image = dynamic(() => import('next/image'), { ssr: false });
@@ -53,6 +53,7 @@ export default function Home({lqipMobile, lqipDesktop}: HomeProps) {
         <div className={classes.content__img}>
           {isMobile ?
             <Image
+              loader={() => 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg'}
               src='https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg'
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={428}
@@ -62,6 +63,7 @@ export default function Home({lqipMobile, lqipDesktop}: HomeProps) {
               blurDataURL={lqipMobile}
               priority={true}
             /> : <Image
+              loader={() => 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'}
               src='https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={1920}
