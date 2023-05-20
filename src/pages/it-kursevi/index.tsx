@@ -111,6 +111,123 @@ const Mentors = () => {
                         <br />
                         Oni su često beskorisni papiri koji samo potvrđuju da si proveo određeno vreme
                         u učionici ili prošao određeni ispit.
+                        <br />
+                        <br />
+                        S druge strane, naša praksa pružanja pisanih preporuka omogućava da se fokusiraš
+                        na sticanje stvarnih veština i znanja koji su relevantni za tvoju karijeru.
+                        <br />
+                        <br />
+                        Važno je napomenuti da izdavanje sertifikata često dovodi do ograničavanja gradiva
+                        koje se podučava. Kursevi moraju pratiti određene smernice kako bi izdali sertifikat,
+                        što znači da se mora prenositi određeno gradivo bez obzira na to koliko je relevantno ili ažurno.
+                        <br />
+                        <br />
+                        Sa druge strane, mentorstvo se prilagođava tvojim specifičnim potrebama i ciljevima,
+                        omogućavajući ti da budeš u koraku sa vremenom i stičeš veštine koje su trenutno tražene u industriji.
+                        <br />
+                        <br />
+                        Dakle, umesto da se oslanjaš na sertifikate koji imaju ograničenja i ne pružaju dublji uvid u tvoje
+                        sposobnosti, dobićeš pisane preporuke koje su personalizovane i vrednovane od strane mentora koji
+                        je direktno radio s tobom.
+                        <br />
+                        <br />
+                        Ovaj pristup će dati veću vrednost tvojim kvalifikacijama i omogućiti da se istakneš u
+                        industriji na temelju stvarnih dostignuća i preporuka mentora.
+                        <br />
+                        <br />
+                    </div>
+                    <div className={classes.mentors_page__content__subtitle}>
+                        <h2>Trajanje mentorstva</h2>
+                    </div>
+                    <div className={classes.mentors_page__content__description}>
+                        Jedna od ključnih prednosti mentorstva u programiranju je mogućnost prilagođavanja
+                        dužine vremenskog perioda podučavanja tvojim individualnim potrebama.
+                        <br />
+                        <br />
+                        Ova personalizacija i fleksibilnost će ti pružiti mnoge benefite u poređenju s
+                        klasičnim kursevima ili fakultetima.
+                        <br />
+                        <br />
+                        Kod nas, trajanje mentorstva nije unapred određeno fiksnim periodom. Umesto toga,
+                        mentorstvo se adaptira tvojim specifičnim ciljevima, trenutnom nivou znanja i
+                        vremenskim mogućnostima, što će ti omogućiti da napreduješ u skladu s vlastitim
+                        tempom.
+                        <br />
+                        <br />
+                        Benefiti personalizovanog trajanja mentorstva su višestruki. Najpre, dobićeš
+                        priliku da dublje istražiš i razumeš koncepte koji ti možda predstavljaju izazov.
+                        <br />
+                        <br />
+                        Moći ćeš brže da napreduješ ukoliko si već vešt u određenim područjima. Nećeš morati
+                        da provodiš vreme na gradivu koje već dobro poznaješ, umesto toga ćeš se fokusirati
+                        na razvoj novih veština i na savladavanje nepoznatih izazova.
+                        <br />
+                        <br />
+                        S druge strane, klasični kursevi i fakulteti često imaju fiksne termine i ograničeno
+                        trajanje nastave. Nakon što završiš kurs ili fakultet, tvoje učešće obično završava,
+                        a nastavak podrške u zaposlenju postaje ograničen.
+                        <br />
+                        <br />
+                        Nama je cilj da podržimo tvoj napredak i uspeh ne samo tokom trajanja mentorstva,
+                        već i nakon toga. Nastojimo da ti pomognemo u pronalaženju posla i daljem razvoju karijere,
+                        pružajući kontinuiranu podršku.
+                        <br />
+                        <br />
+                    </div>
+                    <div className={classes.mentors_page__content__subtitle}>
+                        <h2>Simulacija poslovnog okruženja</h2>
+                    </div>
+                    <div className={classes.mentors_page__content__description}>
+                        Jedan od ključnih aspekata mentorstva u programiranju je naglasak rada na stvarnim
+                        projektima koji oponašaju rad u firmi.
+                        <br />
+                        <br />
+                        Ova praksa ima mnoge prednosti u poređenju sa tradicionalnim kursevima ili fakultetima.
+                        <br />
+                        <br />
+                        Kada odabereš mentorstvo, tvoj vodič će te usmeriti da radiš na projektima koji
+                        su relevantni za tvoje područje interesa i karijerne ciljeve.
+                        <br />
+                        <br />
+                        Ovi projekti su oblikovani tako da reflektuju situacije i izazove sa kojima ćeš
+                        se suočavati u stvarnom svetu programiranja.
+                        <br />
+                        <br />
+                        Radićeš na pravim zadacima i problemima koji se mogu pojaviti u industriji,
+                        što će ti pružiti dragoceno iskustvo i pripremiti za stvarne poslovne situacije.
+                        <br />
+                        <br />
+                        Ova praksa se razlikuje od tradicionalnih kurseva ili fakulteta gde se često
+                        naglasak stavlja na teorijsko gradivo ili rešavanje zadataka samo radi polaganja ispita.
+                        <br />
+                        <br />
+                        Kroz rad na projektima takođe dobijaš priliku da stekneš iskustvo u timskom radu i
+                        upravljanju projektima.
+                        <br />
+                        <br />
+                        Rad na projektima u okviru mentorstva pružiće ti sjajnu priliku da razviješ svoj portfolio
+                        i istakneš svoje veštine u svom CV-u prilikom apliciranja za posao.
+                        <br />
+                        <br />
+                        Ovi projekti mogu poslužiti kao konkretni dokazi tvog rada i sposobnosti da primeniš
+                        svoje znanje u praksi.
+                        <br />
+                        <br />
+                        To je od izuzetne važnosti jer poslodavci često traže praktično iskustvo i dokaze o
+                        sposobnosti da se efikasno nosiš s realnim izazovima.
+                        <br />
+                        <br />
+                    </div>
+                    <div className={classes.mentors_page__content__subtitle}>
+                        <h2>It prekvalifikacija kroz mentorstvo</h2>
+                    </div>
+                    <div className={classes.mentors_page__content__description}>
+                        Mentorstvo u programiranju pruža izvanredne mogućnosti za promenu karijere.
+                        <br />
+                        <br />
+                        Bez obzira na to da li dolaziš iz potpuno drugog područja ili želiš unaprediti
+                        svoje postojeće veštine, mentorstvo će ti pružiti potrebnu podršku i usmeriti 
+                        na putu ka uspešnoj tranziciji.
                     </div>
                 </div>
 
