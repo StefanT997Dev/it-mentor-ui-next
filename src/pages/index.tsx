@@ -6,30 +6,38 @@ import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
 import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
 import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import classes from './index.module.scss';
+import dynamic from 'next/dynamic';
+import lqip from 'lqip-modern';
 
-// interface MyPageContext {
-//   req: NextRequest;
-//   res: NextResponse;
-// }
+export const getStaticProps = async() => {
+  const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
+  const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
-// export async function getServerSideProps(context: MyPageContext) {
-//   const { req } = context;
-//   const {device} = userAgent(req.headers);
-//   const isMobile = device.type === 'mobile' ? true : false
+  const mobileImageData = await fetch (mobileImageUrl);
+  const mobileArrayBufferData = await mobileImageData.arrayBuffer();
+  const mobileLowQualityImagePlaceholder = await lqip(Buffer.from(mobileArrayBufferData)); 
 
-//   return {
-//     props: {
-//       isMobile,
-//     },
-//   };
-// }
+  const desktopImageData = await fetch (desktopImageUrl);
+  const desktopArrayBufferData = await desktopImageData.arrayBuffer();
+  const desktopLowQualityImagePlaceholder = await lqip(Buffer.from(desktopArrayBufferData)); 
 
-// interface HomePageProps {
-//   isMobile: boolean;
-// }
+  return {
+    props:{
+      lqipMobile: mobileLowQualityImagePlaceholder.metadata.dataURIBase64,
+      lqipDesktop: desktopLowQualityImagePlaceholder.metadata.dataURIBase64
+    }
+  }
+}
 
-export default function Home() {
+interface HomeProps{
+  lqipMobile: string,
+  lqipDesktop: string
+}
+
+export default function Home({lqipMobile, lqipDesktop}: HomeProps) {
   const { isMobile } = useMobile();
+
+  const Image = dynamic(() => import('next/image'), { ssr: false });
 
   return (
     <>
@@ -43,13 +51,26 @@ export default function Home() {
 
       <div className={classes.content}>
         <div className={classes.content__img}>
-          <Image
-            src={isMobile ? HomePageCoverMobile : HomePageCover}
-            alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
-            sizes='100vw'
-            placeholder='blur'
-            //priority={true}
-          />
+          {isMobile ?
+            <Image
+              src='https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg'
+              alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
+              width={428}
+              height={926}
+              sizes='100vw'
+              placeholder='blur'
+              blurDataURL={lqipMobile}
+              priority={true}
+            /> : <Image
+              src='https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'
+              alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
+              width={1920}
+              height={1080}
+              sizes='100vw'
+              placeholder='blur'
+              blurDataURL={lqipDesktop}
+              priority={true}
+            />}
         </div>
         <div className={classes.content__main}>
           <h1 className={classes.content__main__title}>
@@ -72,7 +93,7 @@ export default function Home() {
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
               sizes='100vw'
-              //priority={true}
+            //priority={true}
             />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>

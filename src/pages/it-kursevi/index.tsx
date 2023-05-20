@@ -28,7 +28,7 @@ const Mentors = () => {
                 <title>IT Kursevi | Razvijaj projekte sa mentorom u 2023-oj</title>
                 <meta
                     name='description'
-                    content='Nasuprot slušanju dosadnih predavanja i striktno struktuiranih nastava, dobićeš personalizovani razvojni put. Počni danas, bez čekanja.'
+                    content='Nasuprot slušanju dosadnih predavanja i striktno struktuiranih nastava, dobićeš personalizovani razvojni put. It kursevi su prošlost, počni danas sa mentorstvom.'
                 ></meta>
             </Head>
             <div className={classes.mentors_page}>
@@ -185,8 +185,8 @@ const Mentors = () => {
                         Ova praksa ima mnoge prednosti u poređenju sa tradicionalnim kursevima ili fakultetima.
                         <br />
                         <br />
-                        Kada odabereš mentorstvo, tvoj vodič će te usmeriti da radiš na projektima koji
-                        su relevantni za tvoje područje interesa i karijerne ciljeve.
+                        Kada odabereš mentorstvo, tvoj vodič će te usmeriti da radiš na aplikacijama koje
+                        su relevantne za tvoje područje interesa i karijerne ciljeve.
                         <br />
                         <br />
                         Ovi projekti su oblikovani tako da reflektuju situacije i izazove sa kojima ćeš
@@ -201,7 +201,7 @@ const Mentors = () => {
                         naglasak stavlja na teorijsko gradivo ili rešavanje zadataka samo radi polaganja ispita.
                         <br />
                         <br />
-                        Kroz rad na projektima takođe dobijaš priliku da stekneš iskustvo u timskom radu i
+                        Kroz razvoj aplikacija sa mentorom ćeš takođe dobiti priliku da stekneš iskustvo u timskom radu i
                         upravljanju projektima.
                         <br />
                         <br />
