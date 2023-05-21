@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import useMobile from '@/hooks/useMobile'
 import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
-import HomePageCover from '@/../public/home-page/it-obuke-desktop.jpg';
-import HomePageCoverMobile from '@/../public/home-page/it-obuke-mobilni.jpg';
 import classes from './index.module.scss';
 import dynamic from 'next/dynamic';
 import lqip from 'lqip-modern';
@@ -59,8 +56,8 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               width={428}
               height={926}
               sizes='100vw'
-              //placeholder='blur'
-              //blurDataURL={lqipMobile}
+              placeholder='blur'
+              blurDataURL={lqipMobile}
               priority
             /> : <Image
               loader={() => 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'}
@@ -69,8 +66,8 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               width={1920}
               height={1080}
               sizes='100vw'
-              //placeholder='blur'
-              //blurDataURL={lqipDesktop}
+              placeholder='blur'
+              blurDataURL={lqipDesktop}
               priority
             />}
         </div>
