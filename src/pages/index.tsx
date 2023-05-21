@@ -9,7 +9,7 @@ import classes from './index.module.scss';
 import dynamic from 'next/dynamic';
 import lqip from 'lqip-modern';
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
   const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
