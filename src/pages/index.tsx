@@ -58,22 +58,20 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={428}
               height={926}
-              loading='eager'
               sizes='100vw'
-              placeholder='blur'
-              blurDataURL={lqipMobile}
-              priority={true}
+              //placeholder='blur'
+              //blurDataURL={lqipMobile}
+              priority
             /> : <Image
               loader={() => 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'}
               src='https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg'
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={1920}
               height={1080}
-              loading='eager'
               sizes='100vw'
-              placeholder='blur'
-              blurDataURL={lqipDesktop}
-              priority={true}
+              //placeholder='blur'
+              //blurDataURL={lqipDesktop}
+              priority
             />}
         </div>
         <div className={classes.content__main}>
