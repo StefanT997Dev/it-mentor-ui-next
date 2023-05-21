@@ -9,7 +9,7 @@ import classes from './index.module.scss';
 import dynamic from 'next/dynamic';
 import lqip from 'lqip-modern';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
   const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
@@ -58,6 +58,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={428}
               height={926}
+              loading='eager'
               sizes='100vw'
               placeholder='blur'
               blurDataURL={lqipMobile}
@@ -68,6 +69,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               alt="Iskusni softverski inženjer iz IT industrije podučava početnika kako da programira"
               width={1920}
               height={1080}
+              loading='eager'
               sizes='100vw'
               placeholder='blur'
               blurDataURL={lqipDesktop}
