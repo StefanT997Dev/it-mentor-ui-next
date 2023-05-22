@@ -5,6 +5,7 @@ import RoundGraphicWorkImage from '@/../public/it-obuke.svg';
 import classes from './index.module.scss';
 import dynamic from 'next/dynamic';
 import lqip from 'lqip-modern';
+import ClientContactButton from '@/components/ClientContactButton/ClientContactButton';
 
 export const getStaticProps = async () => {
   const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
@@ -92,7 +93,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               src={RoundGraphicWorkImage}
               alt='Samopouzdani mentor sa entuzijastičnim stavom'
               sizes='100vw'
-            //priority={true}
+              priority={true}
             />
             <div className={classes.content__main__client_container__got_account}>
               <div className={classes.content__main__client_container__got_account__text}>
@@ -107,6 +108,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
             </div>
           </div>
         </div>
+        <ClientContactButton />
       </div>
     </>
   )

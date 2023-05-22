@@ -11,14 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-clients-cta-red;
+    background-color: $color-white;
     border-radius: 5px;
+    border: 3px solid $color-clients-cta-red;
     box-shadow: 0px 18px 60px -12px rgba(255, 42, 104, 0.3);
     z-index: 1000;
 
     font-style: normal;
     font-size: 1.8rem;
-    color: $color-white;
+    color: $color-dark-gray;
 
     @include above-mobile(){
         right: 5%;
