@@ -9,12 +9,13 @@
     font-weight: 800;
     text-align: center;
     align-items: center;
+    position: relative;
 
     &__img {
         @include backgroundImage();
 
-        img {
-            @include above-mobile() {
+        @include above-mobile(){
+            img{
                 height: fit-content;
             }
         }
@@ -112,4 +113,13 @@
             }
         }
     }
+
+    &__faq{
+        margin-top: 5em;
+        background-color: $color-blue;
+    }
+}
+
+.text{
+    color: black;
 }
