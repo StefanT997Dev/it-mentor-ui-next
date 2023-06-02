@@ -122,7 +122,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
             Ispravljao greške, davao mu najbolje pristupe iz industrije tokom mentorstva, i s’ obzirom da je sada imao konekciju, Miljan se, posetom Pančevu, upoznao i sa radom jedne od IT firmi.
           </div>
           <h3>Ko su mentori i kakvo iskustvo imaju?</h3>
-          <div className={classes.faq__answer}>
+          {/* <div className={classes.faq__answer}>
             Ono što nas izdvaja kod selekcije tutora jeste činjenica da mentor mora biti zapošljeni softverski inženjer.
 
             Ovo je jedan od preduslova kojim osiguravamo da je u koraku sa vremenom.
@@ -145,10 +145,10 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
 
             Ukoliko imaš puno obaveza, takođe ćemo se pobrinuti da dođeš do istog cilja, prilagođeni tvom rasporedu.
           </div>
-          <h3>Da li je potrebno prethodno iskustvo u programiranju da bih se prijavio/la za obuku?</h3>
+          <h3>Da li je potrebno prethodno iskustvo u programiranju da bih se prijavio/la za obuku?</h3> */}
         </div>
 
-        <div className={classes.text}>
+        {/* <div className={classes.text}>
           H2: Kako postati programer: Miljan Pjanović, bivši pica majstor, sada junior backend developer
           H3: Otkrivanje strasti za programiranjem: Miljanova priča
           H3: Prekvalifikacija za IT: Miljanovi izazovi i motivacija
@@ -203,7 +203,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
           njega jedino interesuje da li poseduješ veštine neophodne za obavljanje posla i možeš li, uz pomoć tih skill-ova, njemu doneti profit ili ne.
 
           Diploma je neophodna da bi postao doktor ili pravnik? Da. Treba ti kako bi postao programer? Ne.
-        </div>
+        </div> */}
 
         <ClientContactButton />
       </div>
