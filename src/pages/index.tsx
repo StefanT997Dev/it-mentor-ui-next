@@ -110,25 +110,44 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
         </div>
 
         <div className={classes.content__info}>
+          <br />
           <div className={classes.content__info__text}>
             <h2 className={classes.content__info__text__title}>Kako naučiti programiranje: Jedinstveni pristup učenja kroz projekte</h2>
             <h3 className={classes.content__info__text__subtitle}>Vodiće te IT stručnjak i ubrzati tvoj napredak</h3>
             <div className={classes.content__info__text__description}>
-              Uz naš inovativni stil podučavanja kroz simulaciju poslovnog okruženja, dobićeš priliku da <strong>brže od ostalih</strong> postigneš svoj cilj prvog zaposlenja.<br/><br/>
+              Uz naš inovativni stil podučavanja kroz simulaciju poslovnog okruženja, dobićeš priliku da <strong>brže od ostalih</strong> postigneš svoj cilj prvog zaposlenja.<br /><br />
 
-              Ovo će ti dati kompetitivnu prednost nad polaznicima kurseva i fakulteta jer ćeš jedini imati adekvatno znanje neophodno za prvi posao i projekte iza sebe koji na to ukazuju.<br/><br/>
+              Ovo će ti dati kompetitivnu prednost nad polaznicima kurseva i fakulteta jer ćeš jedini imati adekvatno znanje neophodno za prvi posao i projekte iza sebe koji na to ukazuju.<br /><br />
 
-              Nijedan poslodavac ne želi teoretičara sa parčetom papira koji će recitovati naučene definicije, već nekoga ko će moći da se nosi sa realnim poslovnim zahtevima.<br/><br/>
+              Nijedan poslodavac ne želi teoretičara sa parčetom papira koji će recitovati naučene definicije, već nekoga ko će moći da se nosi sa realnim poslovnim zahtevima.<br /><br />
 
-              Odmah na početku obuke, dobićeš priliku da se upustiš u izgradnju <strong>real-world aplikacija</strong> i programskih rešenja. Ovi projekti su struktuirani da kroz njih pređeš tehnologije koje će ti biti potrebne na prvom poslu.<br/><br/>
+              Odmah na početku obuke, dobićeš priliku da se upustiš u izgradnju <strong>real-world aplikacija</strong> i programskih rešenja. Ovi projekti su struktuirani da kroz njih pređeš tehnologije koje će ti biti potrebne na prvom poslu.<br /><br />
 
-              Naši IT stručnjaci će te nadgledati tokom čitavog procesa, pružajući ti dragocene povratne informacije i usmeravanje. Oni će redovno <strong>pregledati tvoj kod</strong>, identifikovati potencijalne greške i pružiti smernice kako bi unapredio/la svoje veštine.<br/><br/>
+              Naši IT stručnjaci će te nadgledati tokom čitavog procesa, pružajući ti dragocene povratne informacije i usmeravanje. Oni će redovno <strong>pregledati tvoj kod</strong>, identifikovati potencijalne greške i pružiti smernice kako bi unapredio/la svoje veštine.<br /><br />
 
-              Ova direktna interakcija sa mentorima omogućiće ti da brzo stekneš uvid u najbolje prakse i razumeš efektivne načine rešavanja problema.<br/><br/>
+              Ova direktna interakcija sa mentorima omogućiće ti da brzo stekneš uvid u najbolje prakse i razumeš efektivne načine rešavanja problema.<br /><br />
 
-              Uz mentorsku podršku, bićeš u mogućnosti da stekneš poverenje u svoje veštine i izgradiš portfolio impresivnih projekata.<br/><br/>
+              Uz mentorsku podršku, bićeš u mogućnosti da stekneš poverenje u svoje veštine i izgradiš portfolio impresivnih projekata.<br /><br />
 
-              Kada završiš naš program, imaćeš sve alate i veštine koje su ti potrebne za pronalaženje svog <strong>prvog posla kao programer</strong>.<br/><br/><br/><br/>
+              Kada završiš naš program, imaćeš sve alate i veštine koje su ti potrebne za pronalaženje svog <strong>prvog posla kao programer</strong>.<br /><br />
+            </div>
+          </div>
+        </div>
+
+        <div className={classes.content__info2}>
+          <br />
+          <div className={classes.content__info2__text}>
+            <h3 className={classes.content__info2__text__subtitle}>Soft skillovi: Razvijanje veština saradnje</h3>
+            <div className={classes.content__info2__text__description}>
+              Uz naš program, ne samo da stičeš tehničko znanje, već ćeš takođe imati priliku da razviješ važne veštine saradnje.<br /><br />
+
+              Uvereni smo da su soft skillovi ključni za uspeh u IT industriji i zato posvećujemo posebnu pažnju njihovom razvijanju.<br /><br />
+
+              Naš fokus nije samo na kodiranju - mi te podstičemo da radiš u timskom okruženju, sarađuješ sa drugim polaznicima i mentorima, i stekneš veštine komunikacije, liderstva i efektivne saradnje.<br /><br /> 
+              
+              Kroz različite projekte, naučićeš kako uspešno komunicirati, razmenjivati ideje, rešavati probleme zajedno i doprineti timskom uspehu.<br /><br />
+
+              Poslodavci sve više traže programere koji ne samo da imaju tehničko znanje, već i sposobnost da efektivno sarađuju u timu. Uz našu pomoć, ti ćeš razviti te veštine i imati konkurentske prednosti na tržištu rada.<br /><br />
             </div>
           </div>
         </div>

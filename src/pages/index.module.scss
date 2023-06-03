@@ -164,6 +164,45 @@
         }
     }
 
+    &__info2{
+        display: flex;
+        background-color: $color-dark-purple;
+        color: $color-white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__text {
+            width: 90%;
+            text-align: left;
+
+            @include above-mobile(){
+                width: 50%;
+            }
+
+            &__subtitle {
+                font-size: 1.8rem;
+
+                @include above-mobile() {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.04em;
+                }
+            }
+
+            &__description {
+                font-size: 1.8rem;
+                font-family: "Gilroy-Thin";
+                font-weight: 300;
+                line-height: 1.4em;
+
+                @include above-mobile() {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
+    }
+
     &__faq {
         background-color: $color-blue;
         display: flex;
