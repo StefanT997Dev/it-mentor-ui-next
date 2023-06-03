@@ -40,10 +40,10 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
   return (
     <>
       <Head>
-        <title>IT Obuke | Provera koda na svakom koraku tvog razvoja</title>
+        <title>IT Obuke | Uči programiranje kroz projekte uz vođstvo seniora</title>
         <meta
           name='description'
-          content='Dođi do prvog visoko plaćenog posla u sektoru informacionih tehnologija kroz saradnju sa softverskim inženjerom iz industrije'
+          content='Miljan, bivši pica majstor, sada junior programer! Ovo je lično iskustvo našeg polaznika. I ti možeš postati programer u 2023-oj. Saznaj detaljno kako.'
         ></meta>
       </Head>
 
@@ -109,6 +109,30 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
           </div>
         </div>
 
+        <div className={classes.content__info}>
+          <div className={classes.content__info__text}>
+            <h2 className={classes.content__info__text__title}>Kako naučiti programiranje: Jedinstveni pristup učenja kroz projekte</h2>
+            <h3 className={classes.content__info__text__subtitle}>Vodiće te IT stručnjak i ubrzati tvoj napredak</h3>
+            <div className={classes.content__info__text__description}>
+              Uz naš inovativni stil podučavanja kroz simulaciju poslovnog okruženja, dobićeš priliku da <strong>brže od ostalih</strong> postigneš svoj cilj prvog zaposlenja.<br/><br/>
+
+              Ovo će ti dati kompetitivnu prednost nad polaznicima kurseva i fakulteta jer ćeš jedini imati adekvatno znanje neophodno za prvi posao i projekte iza sebe koji na to ukazuju.<br/><br/>
+
+              Nijedan poslodavac ne želi teoretičara sa parčetom papira koji će recitovati naučene definicije, već nekoga ko će moći da se nosi sa realnim poslovnim zahtevima.<br/><br/>
+
+              Odmah na početku obuke, dobićeš priliku da se upustiš u izgradnju <strong>real-world aplikacija</strong> i programskih rešenja. Ovi projekti su struktuirani da kroz njih pređeš tehnologije koje će ti biti potrebne na prvom poslu.<br/><br/>
+
+              Naši IT stručnjaci će te nadgledati tokom čitavog procesa, pružajući ti dragocene povratne informacije i usmeravanje. Oni će redovno <strong>pregledati tvoj kod</strong>, identifikovati potencijalne greške i pružiti smernice kako bi unapredio/la svoje veštine.<br/><br/>
+
+              Ova direktna interakcija sa mentorima omogućiće ti da brzo stekneš uvid u najbolje prakse i razumeš efektivne načine rešavanja problema.<br/><br/>
+
+              Uz mentorsku podršku, bićeš u mogućnosti da stekneš poverenje u svoje veštine i izgradiš portfolio impresivnih projekata.<br/><br/>
+
+              Kada završiš naš program, imaćeš sve alate i veštine koje su ti potrebne za pronalaženje svog <strong>prvog posla kao programer</strong>.<br/><br/><br/><br/>
+            </div>
+          </div>
+        </div>
+
         <div className={classes.content__faq}>
           <div className={classes.content__faq__text}>
             <h2 className={classes.content__faq__text__title}>IT mentorstvo:<br />Sve što trebaš znati (FAQ)</h2>
@@ -168,7 +192,7 @@ export default function Home({ lqipMobile, lqipDesktop }: HomeProps) {
               njega jedino interesuje da li poseduješ veštine neophodne za obavljanje posla i možeš li, uz pomoć tih skill-ova, njemu doneti profit ili ne.<br /><br />
 
               Diploma je neophodna da bi postao doktor ili pravnik? <strong>Da</strong>.<br /><br />
-              
+
               Treba ti kako bi postao programer? <strong>Ne</strong>.
             </div>
             <h3 className={classes.content__faq__text__question}>Prijava za IT obuku</h3>
