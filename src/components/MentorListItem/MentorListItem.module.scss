@@ -9,7 +9,7 @@
   gap: 1em;
   color: $color-dark-gray;
 
-  @include above-mobile(){
+  @include above-mobile() {
     gap: 0.4em;
     margin-bottom: 2em;
   }
@@ -23,7 +23,7 @@
     height: auto;
     margin-top: 5em;
 
-    @include above-mobile(){
+    @include above-mobile() {
       margin-top: 1em;
     }
 
@@ -37,7 +37,7 @@
     letter-spacing: 0.04em;
     color: $color-dark-purple;
 
-    @include above-mobile(){
+    @include above-mobile() {
       font-size: 1.2rem;
     }
   }
@@ -46,7 +46,7 @@
     font-size: 1.8rem;
     letter-spacing: 0.04em;
 
-    @include above-mobile(){
+    @include above-mobile() {
       font-size: 0.45rem;
     }
   }
@@ -57,7 +57,7 @@
     font-style: normal;
     margin-bottom: 0.2em;
 
-    @include above-mobile(){
+    @include above-mobile() {
       font-size: 0.45rem;
     }
   }
@@ -66,8 +66,10 @@
     font-size: 1.8rem;
     line-height: 3rem;
     letter-spacing: 0.04em;
+    font-family: "Gilroy-Thin";
+    font-weight: 300;
 
-    @include above-mobile(){
+    @include above-mobile() {
       font-size: 0.45rem;
       line-height: 1rem;
     }
@@ -78,7 +80,7 @@
     font-size: 1.4rem;
     letter-spacing: 0.04em;
 
-    @include above-mobile(){
+    @include above-mobile() {
       font-size: 0.35rem;
     }
 
@@ -91,7 +93,7 @@
 
       border: 0.1rem solid $color-dark-gray;
 
-      @include above-mobile(){
+      @include above-mobile() {
         width: 2em;
         left: 7em;
         top: 0.18rem;

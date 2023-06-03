@@ -34,13 +34,14 @@
       }
     }
 
-    &__content{
+    &__content {
       width: 100%;
     }
 
     &__skills {
       margin-top: 2em;
-      @include above-mobile(){
+
+      @include above-mobile() {
         margin-top: 0.4em;
       }
     }
@@ -53,7 +54,7 @@
         letter-spacing: 0.04em;
         color: #15172C;
 
-        @include above-mobile(){
+        @include above-mobile() {
           font-size: 1.2rem;
           line-height: 0rem;
           margin-top: 1.2em;
@@ -81,6 +82,8 @@
         line-height: 1.4em;
         letter-spacing: 0.04em;
         color: #58595F;
+        font-family: "Gilroy-Thin";
+        font-weight: 300;
 
         @include above-mobile() {
           line-height: 2rem;
@@ -101,7 +104,7 @@
     text-align: center;
     gap: 2em;
 
-    @include above-mobile(){
+    @include above-mobile() {
       width: 70%;
       gap: 0.8em;
     }
@@ -113,7 +116,7 @@
       color: #15172C;
       letter-spacing: 0.04em;
 
-      @include above-mobile(){
+      @include above-mobile() {
         font-size: 1.2rem;
         line-height: 1rem;
       }
@@ -139,7 +142,7 @@
       flex-direction: column;
       gap: 2.4rem;
 
-      @include above-mobile(){
+      @include above-mobile() {
         flex-direction: row;
         gap: 1.2em;
         margin-bottom: 3em;

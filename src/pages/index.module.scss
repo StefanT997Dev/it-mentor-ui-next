@@ -14,8 +14,8 @@
     &__img {
         @include backgroundImage();
 
-        @include above-mobile(){
-            img{
+        @include above-mobile() {
+            img {
                 height: fit-content;
             }
         }
@@ -114,12 +114,53 @@
         }
     }
 
-    &__faq{
+    &__faq {
         margin-top: 5em;
         background-color: $color-blue;
-    }
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.text{
-    color: black;
+        &__text {
+            width: 90%;
+            text-align: left;
+
+            @include above-mobile(){
+                width: 50%;
+            }
+
+            &__title {
+                margin-top: 2em;
+                font-size: 3rem;
+
+                @include above-mobile() {
+                    font-size: 1.6rem;
+                    letter-spacing: 0.04em;
+                }
+            }
+
+            &__question {
+                font-size: 1.8rem;
+
+                
+                @include above-mobile() {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.04em;
+                }
+            }
+
+            &__answer {
+                font-size: 1.8rem;
+                font-family: "Gilroy-Thin";
+                font-weight: 300;
+                line-height: 1.4em;
+
+                @include above-mobile() {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
+    }
 }

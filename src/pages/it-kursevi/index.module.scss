@@ -12,7 +12,7 @@
         margin-top: 10em;
         width: 90%;
 
-        @include above-mobile(){
+        @include above-mobile() {
             margin-top: 2em;
             width: 70%;
         }
@@ -24,35 +24,35 @@
             color: $color-dark-purple;
             margin-bottom: 0.5em;
 
-            @include above-mobile(){
+            @include above-mobile() {
                 font-size: 2rem;
             }
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 1.8rem;
 
-            @include above-mobile(){
+            @include above-mobile() {
                 font-size: 0.7rem;
             }
         }
 
         &__description {
             font-size: 1.8rem;
-            font-style: normal;
+            font-family: "Gilroy-Thin";
             font-weight: 300;
             color: #58595F;
             letter-spacing: 0.04em;
             margin-top: 1.5em;
 
-            @include above-mobile(){
+            @include above-mobile() {
                 font-size: 0.7rem;
-                width: 70%;
+                width: 60%;
             }
         }
     }
 }
 
-.footer{
+.footer {
     margin-top: -20em;
 }

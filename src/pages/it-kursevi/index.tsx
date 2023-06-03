@@ -66,12 +66,12 @@ const Mentors = () => {
                         Neki od benefita su:
                         <br />
                         <br />
-                        <strong>Pristupačnost:</strong> Bez obzira na to gde se nalaziš, pronaći ćeš stručnog mentora
+                        Pristupačnost: Bez obzira na to gde se nalaziš, pronaći ćeš stručnog mentora
                         iz bilo koje regije ili zemlje. Nema geografskih ograničenja, pa ćeš imati
                         mogućnost odabira između raznih tutora sa različitim iskustvom i veštinama.
                         <br />
                         <br />
-                        <strong>Fleksibilnost vremena:</strong> Online mentorstvo omogućiće ti učenje prilagodeno tvom rasporedu.
+                        Fleksibilnost vremena: Online mentorstvo omogućiće ti učenje prilagodeno tvom rasporedu.
                         Nema potrebe za putovanjem do određenog mesta ili pridržavanjem vremena nastave.
                         <br />
                         <br />
