@@ -369,25 +369,25 @@ export default function Home() {
           />
           <h3 className={classes.content__testimonial__subtitle}>Prekvalifikacija za IT: Miljanovi izazovi i motivacija</h3>
           <div className={classes.content__testimonial__description}>
-            "Imao sam želju da promenim trenutni posao za nešto bolje i preporučujem svakome da, ukoliko hoće da uđe u IT industriju, stremi ka tome."<br /><br />
+            &quot;Imao sam želju da promenim trenutni posao za nešto bolje i preporučujem svakome da, ukoliko hoće da uđe u IT industriju, stremi ka tome.&quot;<br /><br />
 
-            "Izazova je bilo gomilu, kao što ih je i dan danas, tako da nemam neki konkretan."<br /><br />
+            &quot;Izazova je bilo gomilu, kao što ih je i dan danas, tako da nemam neki konkretan.&quot;<br /><br />
 
-            "Motivaciju sam tražio apsolutno na svim mogućim mestima, najpre razgovarajući sa drugim programerima."
+            &quot;Motivaciju sam tražio apsolutno na svim mogućim mestima, najpre razgovarajući sa drugim programerima.&quot;
           </div>
           <h3 className={classes.content__testimonial__subtitle}>Da li je programiranje teško?</h3>
           <div className={classes.content__testimonial__description}>
-            "Programiranje samo po sebi nije teško, ali iziskuje trud da se nauči i shvati kako stvari funkcionišu i zbog čega."
+            &quot;Programiranje samo po sebi nije teško, ali iziskuje trud da se nauči i shvati kako stvari funkcionišu i zbog čega.&quot;
           </div>
           <h3 className={classes.content__testimonial__subtitle}>Kursevi programiranja nasuprot mentorstvu</h3>
           <div className={classes.content__testimonial__description}>
-            "Mentorstvo je mnogo bolje, jer je sva pažnja usmerena ka učeniku."
+            &quot;Mentorstvo je mnogo bolje, jer je sva pažnja usmerena ka učeniku.&quot;
           </div>
           <h3 className={classes.content__testimonial__subtitle}>Kako je Miljan postao junior c sharp programer i ostvario svoje ambicije</h3>
           <div className={classes.content__testimonial__description}>
-            "Pa počeo sam sa kursevima, konkurisao nakon završetka i nisam dobio poziv ni na jedan intervju."<br /><br />
+            &quot;Pa počeo sam sa kursevima, konkurisao nakon završetka i nisam dobio poziv ni na jedan intervju.&quot;<br /><br />
 
-            "Nakon toga sam samostalno učio preko interneta, pa sve do mentorstva. Nakon mentorstva sam našao posao."<br /><br /><br />
+            &quot;Nakon toga sam samostalno učio preko interneta, pa sve do mentorstva. Nakon mentorstva sam našao posao.&quot;<br /><br /><br />
           </div>
         </div>
 
@@ -896,8 +896,8 @@ export default function Home() {
           </div>
         </div>
 
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <div className={classes.content__faq}>
           <div className={classes.content__faq__text}>
