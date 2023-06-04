@@ -114,7 +114,7 @@ export const exampleMentors = [
       Odaberi paket, zakaži konsultaciju i krećemo sa radom!
       `,
       image: AleksandarStavric,
-      worksAt: 'aleksandarstavricdesign.weebly.com',
+      worksAt: 'freelance specialist',
       category: 'UI/UX Designer',
       skills: ['UI/UX Design', 
       'Web Design', 
