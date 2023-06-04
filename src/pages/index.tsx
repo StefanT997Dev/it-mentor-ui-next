@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import useMobile from '@/hooks/useMobile'
 import classes from './index.module.scss';
-import dynamic from 'next/dynamic';
 import ClientContactButton from '@/components/ClientContactButton/ClientContactButton';
 import TestimonialPerson from '@/../public/home-page/it-obuke-miljan.webp';
 import ClientLandingHeaderMobileImage from '@/../public/client-landing/programiranje-za-pocetnike-mobilni.jpg';
@@ -21,32 +20,33 @@ import ArrowRightImage from '@/../public/client-landing/programiranje-za-pocetni
 import Link from 'next/link';
 import { exampleMentors } from "@/components/MentorsList/mentors";
 import SkillList from '@/components/SkillList/SkillList';
+import Image from 'next/image';
 
-export const getStaticProps = async () => {
-  // const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
-  // const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
+// export const getStaticProps = async () => {
+//   // const mobileImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-mobilni.jpg';
+//   // const desktopImageUrl = 'https://res.cloudinary.com/dbpisujxq/image/upload/v1684343711/home-page/it-obuke-desktop.jpg';
 
-  // const mobileImageData = await fetch(mobileImageUrl);
-  // const mobileArrayBufferData = await mobileImageData.arrayBuffer();
-  // const mobileLowQualityImagePlaceholder = await lqip(Buffer.from(mobileArrayBufferData));
+//   // const mobileImageData = await fetch(mobileImageUrl);
+//   // const mobileArrayBufferData = await mobileImageData.arrayBuffer();
+//   // const mobileLowQualityImagePlaceholder = await lqip(Buffer.from(mobileArrayBufferData));
 
-  // const desktopImageData = await fetch(desktopImageUrl);
-  // const desktopArrayBufferData = await desktopImageData.arrayBuffer();
-  // const desktopLowQualityImagePlaceholder = await lqip(Buffer.from(desktopArrayBufferData));
+//   // const desktopImageData = await fetch(desktopImageUrl);
+//   // const desktopArrayBufferData = await desktopImageData.arrayBuffer();
+//   // const desktopLowQualityImagePlaceholder = await lqip(Buffer.from(desktopArrayBufferData));
 
-  // return {
-  //   props: {
-  //     lqipMobile: mobileLowQualityImagePlaceholder.metadata.dataURIBase64,
-  //     lqipDesktop: desktopLowQualityImagePlaceholder.metadata.dataURIBase64
-  //   }
-  // }
+//   // return {
+//   //   props: {
+//   //     lqipMobile: mobileLowQualityImagePlaceholder.metadata.dataURIBase64,
+//   //     lqipDesktop: desktopLowQualityImagePlaceholder.metadata.dataURIBase64
+//   //   }
+//   // }
 
-  return {
-    props: {
+//   return {
+//     props: {
 
-    }
-  }
-}
+//     }
+//   }
+// }
 
 // interface HomeProps {
 //   lqipMobile: string,
@@ -55,8 +55,6 @@ export const getStaticProps = async () => {
 
 export default function Home() {
   const { isMobile } = useMobile();
-
-  const Image = dynamic(() => import('next/image'), { ssr: false });
 
   return (
     <>
